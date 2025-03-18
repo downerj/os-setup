@@ -22,6 +22,7 @@ shopt -s expand_aliases
 alias cp="/usr/bin/env cp -i -v"
 alias mv="/usr/bin/env mv -i -v"
 alias rm="/usr/bin/env rm -i -v"
+alias rmdir="/usr/bin/env rmdir -v --parents"
 
 # Use human-readable file sizes when checking free space and disk sizes.
 alias df="/usr/bin/env df -h"
