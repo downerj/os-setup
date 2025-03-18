@@ -72,6 +72,7 @@ telnet
 tigervnc-viewer
 tiled
 tmux
+tree
 vim-gtk3
 vlc
 vulkan-tools
