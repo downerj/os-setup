@@ -1,0 +1,9 @@
+set autoindent
+set linenumbers
+set locking
+set multibuffer
+set nonewlines
+set nowrap
+set regexp
+set tabsize 2
+set tabstospaces
