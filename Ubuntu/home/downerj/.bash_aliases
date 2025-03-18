@@ -65,10 +65,12 @@ for color in ${chevron_colors[@]}; do
 done
 
 if [ $color_prompt = "yes" ]; then
-  PS1="${first_line}\n\[\e[${reset};${bold}m\]${chevron_str}\[\e[${reset}m\] "
+  second_line="\[\e[${reset};${bold}m\]${chevron_str}\[\e[${reset}m\]"
 else
-  PS1="${first_line}\n${chevron_str} "
+  second_line="${chevron_str}"
 fi
 
+PS1="${first_line}\n${second_line} "
+
 unset black red yellow green cyan blue magneta white
-unset git_line first_line chevron chevron_colors chevron_str
+unset git_line first_line second_line chevron chevron_colors chevron_str
