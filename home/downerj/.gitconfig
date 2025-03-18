@@ -1,2 +1,4 @@
 [core]
 	editor = nano
+[init]
+  defaultBranch = main
