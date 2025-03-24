@@ -30,6 +30,7 @@ apps=(\
   glslang-tools \
   gpart \
   gparted \
+  groff \
   imagemagick \
   inkscape \
   kotlin \
@@ -56,6 +57,7 @@ apps=(\
   npm \
   ocaml-base \
   openjdk-23-jdk \
+  pandoc \
   perl \
   php-fpm \
   php \
@@ -73,6 +75,8 @@ apps=(\
   sqlite3 \
   tcl \
   telnet \
+  texlive-latex-extra \
+  texlive-latex-recommended \
   tigervnc-viewer \
   tiled \
   tmux \
