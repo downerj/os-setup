@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# https://www.texmacs.org/tmweb/download/unix.en.html
 VERSION="2.1.4"
 FILE="TeXmacs-${VERSION}-C.tar.gz"
 URL="https://www.texmacs.org/Download/ftp/tmftp/generic/${FILE}"
