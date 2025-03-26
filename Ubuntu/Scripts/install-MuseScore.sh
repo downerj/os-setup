@@ -44,6 +44,6 @@ Type=Application
 Name=MuseScore Studio
 Exec=${SHARE_DIR}/MuseScore/MuseScore-Studio.AppImage
 Icon=${SHARE_DIR}/icons/mscore4portable.png
-NoDisplay=False
+NoDisplay=false
 Categories=Audio;
 EOF
