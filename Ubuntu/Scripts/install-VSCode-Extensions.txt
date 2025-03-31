@@ -1,0 +1,24 @@
+#
+# Extensions.
+#
+ext install golang.Go
+ext install Ionide.Ionide-fsharp
+ext install mjmcloug.vscode-elixir
+ext install ms-dotnettools.csharp
+ext install ms-ossdata.vscode-postgresql
+ext install ms-python.python
+ext install ms-vscode.cpptools
+ext install ms-vscode.vscode-typescript-next
+ext install ocamllabs.ocaml-platform
+ext install pgourlain.erlang
+ext install redhat.java
+ext install rust-lang.rust-analyzer
+ext install s-nlf-fh.glassit
+ext install scala-lang.scala
+ext install slevesque.shader
+
+#
+# Themes.
+#
+ext install GitHub.github-vscode-theme
+ext install liviuschera.noctis
