@@ -1,0 +1,18 @@
+{
+    "editor.fontFamily": "'Fantasque Sans Mono', 'Anonymous Pro', 'Cascadia Code', 'CMU Typewriter Text', 'Fira Code', 'Hasklig', 'IBM Plex Mono', 'JetBrains Mono', 'Monaspace Argon', 'Monaspace Krypton', 'Monaspace Neon', 'Monaspace Radon', 'Monaspace Xenon', 'PxPlus IBM EGA 9x14', 'Source Code Pro', monospace",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.fontLigatures.enabled": true,
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "'Cascadia Code', 'Fantasque Sans Mono', 'CMU Typewriter Text', 'Droid Sans Mono', 'monospace', monospace",
+    "terminal.integrated.fontSize": 13,
+    "workbench.startupEditor": "none",
+    "workbench.externalBrowser": "firefox",
+    "editor.fontWeight": "normal",
+    "editor.fontSize": 16,
+    "glassit.alpha": 235,
+    "workbench.colorTheme": "Default Light Modern",
+    "C_Cpp.default.defines": [
+        "DEBUG"
+    ]
+}
