@@ -7,6 +7,7 @@ ext install mjmcloug.vscode-elixir
 ext install ms-dotnettools.csharp
 ext install ms-ossdata.vscode-postgresql
 ext install ms-python.python
+ext install ms-toolsai.jupyter
 ext install ms-vscode.cpptools
 ext install ms-vscode.vscode-typescript-next
 ext install ocamllabs.ocaml-platform
