@@ -74,3 +74,8 @@ PS1="${first_line}\n${second_line} "
 
 unset black red yellow green cyan blue magneta white
 unset git_line first_line second_line chevron chevron_colors chevron_str
+
+#
+# Coursier (Scala).
+#
+[ -d "$HOME/.local/share/coursier/bin" ] && export PATH="$HOME/.local/share/coursier/bin:$PATH"
