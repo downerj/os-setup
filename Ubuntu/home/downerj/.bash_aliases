@@ -7,8 +7,8 @@
 umask 022
 
 # If the user has private binary directories, then include them in PATH.
-[ -d "${HOME}/bin" ] && export PATH="${HOME}/bin:${PATH}"
-[ -d "${HOME}/.local/bin" ] && export PATH ="${HOME}/.local/bin:${PATH}"
+[ -d "$HOME/bin" ] && export PATH="$HOME/bin:$PATH"
+[ -d "$HOME/.local/bin" ] && export PATH ="$HOME/.local/bin:$PATH"
 
 # Store multi-line commands as a single command.
 shopt -s cmdhist
@@ -48,9 +48,9 @@ bold="1"
 
 git_line='`git branch 2>/dev/null | grep -e ^* | sed -E s/\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
 if [ $color_prompt = "yes" ]; then
-  first_line="\[\e[${reset};${bold};${red}m\]bash \[\e[${yellow}m\]\u \[\e[${blue}m\]\H \[\e[${cyan}m\]\w \[\e[${green}m\]${git_line}"
+  first_line="\[\e[$reset;$bold;${red}m\]bash \[\e[${yellow}m\]\u \[\e[${blue}m\]\H \[\e[${cyan}m\]\w \[\e[${green}m\]$git_line"
 else
-  first_line="bash \u \H \w ${git_line}"
+  first_line="bash \u \H \w $git_line"
 fi
 
 chevron=">"
@@ -58,19 +58,19 @@ chevron_colors=("$magenta" "$red" "$yellow" "$green" "$cyan" "$blue")
 chevron_str=""
 for color in ${chevron_colors[@]}; do
   if [ $color_prompt = "yes" ]; then
-    chevron_str="${chevron_str}\[\e[${color}m\]${chevron}"
+    chevron_str="$chevron_str\[\e[${color}m\]$chevron"
   else
-    chevron_str="${chevron_str}${chevron}"
+    chevron_str="$chevron_str$chevron"
   fi
 done
 
 if [ $color_prompt = "yes" ]; then
-  second_line="\[\e[${reset};${bold}m\]${chevron_str}\[\e[${reset}m\]"
+  second_line="\[\e[$reset;${bold}m\]$chevron_str\[\e[${reset}m\]"
 else
-  second_line="${chevron_str}"
+  second_line="$chevron_str"
 fi
 
-PS1="${first_line}\n${second_line} "
+PS1="$first_line\n$second_line "
 
 unset black red yellow green cyan blue magneta white
 unset git_line first_line second_line chevron chevron_colors chevron_str
