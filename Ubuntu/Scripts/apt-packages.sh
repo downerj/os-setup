@@ -28,6 +28,7 @@ apps=(\
   gimp \
   glslang-dev \
   glslang-tools \
+  golang-go \
   gpart \
   gparted \
   groff \
