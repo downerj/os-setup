@@ -2,13 +2,11 @@
 
 # This file contains user-defined aliases, bash settings, etc.
 
+[ -f "$HOME/.bash_paths" ] && source "$HOME/.bash_paths"
+
 # Set file creation mask.
 # Example: umask 022 means chmod go-w.
 umask 022
-
-# If the user has private binary directories, then include them in PATH.
-[ -d "$HOME/bin" ] && export PATH="$HOME/bin:$PATH"
-[ -d "$HOME/.local/bin" ] && export PATH ="$HOME/.local/bin:$PATH"
 
 # Store multi-line commands as a single command.
 shopt -s cmdhist
@@ -74,8 +72,3 @@ PS1="$first_line\n$second_line "
 
 unset black red yellow green cyan blue magneta white
 unset git_line first_line second_line chevron chevron_colors chevron_str
-
-#
-# Coursier (Scala).
-#
-[ -d "$HOME/.local/share/coursier/bin" ] && export PATH="$HOME/.local/share/coursier/bin:$PATH"

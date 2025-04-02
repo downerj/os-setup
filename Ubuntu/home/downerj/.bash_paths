@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# If the user has private binary directories, then include them in PATH.
+bin="$HOME/bin"
+local_bin="$HOME/.local/bin"
+[ -d "$bin" ] && export PATH="$bin:$PATH"
+[ -d "$local_bin" ] && export PATH ="$local_bin:$PATH"
+unset bin local_bin
+
+#
+# Coursier (Scala).
+#
+coursier_bin="$HOME/.local/share/coursier/bin"
+[ -d "$coursier_bin" ] && export PATH="$coursier_bin:$PATH"
+unset coursier_bin
+
+#
+# Gem (Ruby).
+#
+ruby_bin="$HOME/.local/share/gem/ruby/3.3.0/bin"
+[ -d "$ruby_bin" ] && export PATH="$ruby_bin:$PATH"
+unset ruby_bin
+
+#
+# Go.
+#
+go="$HOME/.local/share/go"
+if [ -d "$go" ]; then
+  go env -w GOPATH="$go"
+  export GOPATH="$go"
+fi
+unset go
