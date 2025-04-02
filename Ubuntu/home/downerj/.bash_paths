@@ -30,3 +30,10 @@ if [ -d "$go" ]; then
   export GOPATH="$go"
 fi
 unset go
+
+#
+# Julia.
+#
+julia_bin="$HOME/.juliaup/bin"
+[ -d "$julia_bin" ] && export PATH="$julia_bin:$PATH"
+unset julia_bin
