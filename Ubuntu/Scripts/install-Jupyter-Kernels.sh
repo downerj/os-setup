@@ -36,6 +36,7 @@ unset ijava_path ijava_version ijava_file
 #
 # Julia.
 #
+julia -e 'using Pkg; Pkg.add("IJulia")'
 
 #
 # Ruby.
