@@ -19,7 +19,19 @@ popd
 
 #
 # Java.
+# https://github.com/SpencerPark/IJava
 #
+ijava_path="$HOME/.local/share/ijava"
+ijava_version="1.3.0"
+ijava_file="ijava-$ijava_version.zip"
+mkdir -p "$ijava_path"
+pushd "$ijava_path"
+curl -f -L -O -R -s -S "https://github.com/SpencerPark/IJava/releases/download/v$ijava_version/$ijava_file"
+unzip "$ijava_file"
+rm -f -v "$ijava_file"
+python3 install.py --user
+popd
+unset ijava_path ijava_version ijava_file
 
 #
 # Julia.
