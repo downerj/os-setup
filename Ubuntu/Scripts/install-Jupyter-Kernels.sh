@@ -41,7 +41,10 @@ julia -e 'using Pkg; Pkg.add("IJulia")'
 
 #
 # Ruby.
+# https://github.com/SciRuby/iruby
 #
+gem install --user-install iruby
+iruby register --force
 
 #
 # Scala.
