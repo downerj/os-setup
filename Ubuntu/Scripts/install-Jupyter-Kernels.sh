@@ -43,7 +43,9 @@ unset ijava_path ijava_version ijava_file
 
 #
 # Scala.
+# https://almond.sh/docs/quick-start-install
 #
+coursier launch --use-bootstrap almond -- --install
 
 #
 # JavaScript & TypeScript.
