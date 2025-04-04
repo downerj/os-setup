@@ -58,6 +58,7 @@ apps=(\
   npm \
   ocaml-base \
   openjdk-23-jdk \
+  openssh-server \
   pandoc \
   perl \
   php-fpm \
