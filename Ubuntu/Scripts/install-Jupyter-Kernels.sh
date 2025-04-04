@@ -35,6 +35,7 @@ unset ijava_path ijava_version ijava_file
 
 #
 # Julia.
+# https://github.com/JuliaLang/IJulia.jl
 #
 julia -e 'using Pkg; Pkg.add("IJulia")'
 
