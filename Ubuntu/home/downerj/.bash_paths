@@ -24,12 +24,9 @@ unset ruby_bin
 #
 # Go.
 #
-go="$HOME/.local/share/go"
-if [ -d "$go" ]; then
-  go env -w GOPATH="$go"
-  export GOPATH="$go"
-fi
-unset go
+go_bin="$HOME/.local/share/go"
+[ -d "$go_bin" ] && export PATH="$go_bin:$PATH"
+unset go_bin
 
 #
 # Julia.
