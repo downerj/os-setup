@@ -42,3 +42,5 @@ popd
 #.local/share/npm_user/bin/ijsinstall --install=local
 
 unset kernels
+
+jupyter kernelspec list
