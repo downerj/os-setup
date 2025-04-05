@@ -27,7 +27,7 @@ cat << EOF > "$SHARE_DIR/TeXmacs/bin/TeXmacs.sh"
 
 export TEXMACS_PATH="$SHARE_DIR/TeXmacs"
 export PATH="\$TEXMACS_PATH/bin:\$PATH"
-\$TEXMACS_PATH/bin/texmacs &
+\$TEXMACS_PATH/bin/texmacs "\$@" &
 EOF
 chmod +x "$SHARE_DIR/TeXmacs/bin/TeXmacs.sh"
 
@@ -42,7 +42,7 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=TeXmacs
-Exec=$SHARE_DIR/TeXmacs/bin/TeXmacs.sh
+Exec=$SHARE_DIR/TeXmacs/bin/TeXmacs.sh %U
 Icon=$SHARE_DIR/TeXmacs/misc/images/texmacs-512.png
 NoDisplay=false
 Categories=Education;
