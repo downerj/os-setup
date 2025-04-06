@@ -19,6 +19,7 @@ apps=(\
   erlang \
   eslint \
   f3d \
+  fdupes \
   ffmpeg \
   fonts-terminus \
   freeglut3-dev \
