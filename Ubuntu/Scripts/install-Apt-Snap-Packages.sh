@@ -71,6 +71,7 @@ apps=(\
   qpdf \
   r-base-core \
   ruby \
+  ruby-dev \
   samba \
   sgt-launcher \
   sgt-puzzles \
