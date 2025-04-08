@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Note: Ruby/Rails needs the following packages:
-# build-essential rustc libssl-dev libyaml-dev zlib1g-dev libgmp-dev
+# build-essential ruby ruby-bundler ruby-dev rustc libssl-dev libyaml-dev zlib1g-dev libgmp-dev
 
 declare -a apps
 apps=(\
