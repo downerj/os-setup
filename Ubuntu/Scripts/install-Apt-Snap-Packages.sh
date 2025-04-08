@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Note: Ruby/Rails needs the following packages:
+# build-essential rustc libssl-dev libyaml-dev zlib1g-dev libgmp-dev
+
 declare -a apps
 apps=(\
   adb \
@@ -43,14 +46,17 @@ apps=(\
   libglfw3-dev \
   libglm-dev \
   libglx-dev \
+  libgmp-dev \
   libncurses-dev \
   libsfml-dev \
+  libssl-dev \
   libvulkan-dev \
   libx11-dev \
   libx11-doc \
   libxcb-doc \
   libxcb-xinput-dev \
   libxcb-xkb-dev \
+  libyaml-dev \
   lshw \
   lynx \
   make \
@@ -73,6 +79,7 @@ apps=(\
   ruby \
   ruby-bundler \
   ruby-dev \
+  rustc \
   samba \
   sgt-launcher \
   sgt-puzzles \
@@ -91,6 +98,7 @@ apps=(\
   vulkan-tools \
   wit \
   zenity \
+  zlib1g-dev \
 )
 echo -e "Selected apps to install:\n${apps[*]}"
 sudo apt install ${apps[*]}
