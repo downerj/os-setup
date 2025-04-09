@@ -21,13 +21,20 @@ alias cp="/usr/bin/env cp -i -v"
 alias mv="/usr/bin/env mv -i -v"
 alias rm="/usr/bin/env rm -i -v"
 alias rmdir="/usr/bin/env rmdir -v"
+alias cp_="/usr/bin/env cp"
+alias mv_="/usr/bin/env mv"
+alias rm_="/usr/bin/env rm"
+alias rmdir_="/usr/bin/env rmdir"
 
 # Use human-readable file sizes when checking free space and disk sizes.
 alias df="/usr/bin/env df -h"
 alias du="/usr/bin/env du -h"
+alias df_="/usr/bin/env df"
+alias du_="/usr/bin/env du"
 
 # Colorize listings, list by lines, append indicators and group folders first.
 alias ls="/usr/bin/env ls -Fx --color=auto --group-directories-first"
+alias ls_="/usr/bin/env ls"
 
 case "$TERM" in
   xterm-color|*-256color) color_prompt=yes;;
