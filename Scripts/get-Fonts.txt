@@ -1,0 +1,57 @@
+# Anonymous Pro
+https://marksimonson.com/fonts/view/anonymous/
+
+# Cascadia Code
+https://github.com/microsoft/cascadia-code
+
+# CMU Typewriter Text Medium
+https://cm-unicode.sourceforge.io/download.html
+
+# CMU Typewriter Text Bold
+https://cm-unicode.sourceforge.io/download.html
+
+# Fantasque Sans Mono
+https://github.com/belluzj/fantasque-sans
+
+# Fira Code
+https://github.com/tonsky/FiraCode
+
+# Hasklig
+https://github.com/i-tu/Hasklig
+
+# IBM Plex Mono
+https://ibm.com/plex/
+
+# Inconsolata
+https://fonts.google.com/specimen/Inconsolata
+
+# JetBrains Mono
+https://jetbrains.com/lp/mono/
+
+# Monaspace Argon
+https://monaspace.githubnext.com/
+
+# Monaspace Krypton
+https://monaspace.githubnext.com/
+
+# Monaspace Neon
+https://monaspace.githubnext.com/
+
+# Monaspace Radon
+https://monaspace.githubnext.com/
+
+# Monaspace Xenon
+https://monaspace.githubnext.com/
+
+# PxPlus IBM VGA 9x14
+https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_vga_9x16
+
+# PxPlus IBM CGA Regular
+https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_cga
+
+# Source Code Pro
+https://github.com/adobe-fonts/source-code-pro
+
+# Terminus (TTF)
+https://files.ax86.net/terminus-ttf/
+
