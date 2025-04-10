@@ -79,6 +79,7 @@ apps=(\
   ruby \
   ruby-bundler \
   ruby-dev \
+  ruby-image-processing \
   rustc \
   samba \
   sgt-launcher \
