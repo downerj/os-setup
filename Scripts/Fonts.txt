@@ -1,3 +1,7 @@
+#
+# Code Fonts.
+#
+
 # Anonymous Pro
 https://marksimonson.com/fonts/view/anonymous/
 
@@ -54,4 +58,11 @@ https://github.com/adobe-fonts/source-code-pro
 
 # Terminus (TTF)
 https://files.ax86.net/terminus-ttf/
+
+#
+# Other Fonts.
+#
+
+# Gentium Book Plus
+https://fonts.google.com/specimen/Gentium+Book+Plus
 
