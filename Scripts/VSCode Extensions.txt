@@ -17,6 +17,7 @@ ext install rust-lang.rust-analyzer
 ext install s-nlf-fh.glassit
 ext install scala-lang.scala
 ext install slevesque.shader
+ext install yzane.markdown-pdf
 
 #
 # Themes.
