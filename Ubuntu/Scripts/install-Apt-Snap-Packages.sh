@@ -98,6 +98,7 @@ apps=(\
   vlc \
   vulkan-tools \
   wit \
+  wodim \
   zenity \
   zlib1g-dev \
 )
