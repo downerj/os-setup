@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>A Dynamic Wallpaper</name>
+    <filename>/path/to/wallpaper-light.png</filename>
+    <filename-dark>/path/to/wallpaper-dark.png</filename-dark>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</pcolor>
+  </wallpaper>
+</wallpapers>
