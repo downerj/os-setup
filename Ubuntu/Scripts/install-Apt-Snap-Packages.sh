@@ -38,6 +38,7 @@ apps=(\
   groff \
   imagemagick \
   inkscape \
+  jupyter-server \
   kotlin \
   leocad \
   libassimp-dev \
