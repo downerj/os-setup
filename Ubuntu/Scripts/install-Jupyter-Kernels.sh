@@ -12,7 +12,7 @@ kernels="$(jupyter --data-dir)/kernels"
 go install github.com/gopherdata/gophernotes@v0.7.5
 mkdir -p "$kernels/gophernotes"
 pushd "$kernels/gophernotes"
-cp "$(go env GOPATH)/pkg/mod/github.com/gopherdata/gophernotes@v0.7.5/kernel/*" ./
+cp "$(go env GOPATH)/pkg/mod/github.com/gopherdata/gophernotes@v0.7.5/kernel/"* ./
 chmod +w kernel.json
 sed "s|gophernotes|$(go env GOPATH)/bin/gophernotes|" < kernel.json.in > kernel.json
 popd
