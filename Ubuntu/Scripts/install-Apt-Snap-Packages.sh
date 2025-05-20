@@ -38,6 +38,7 @@ apps=(\
   groff \
   imagemagick \
   inkscape \
+  jupyter-core \
   jupyter-server \
   kotlin \
   leocad \
