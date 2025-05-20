@@ -62,4 +62,4 @@ coursier launch --use-bootstrap almond -- --install
 
 unset kernels
 
-jupyter kernelspec list
+jupyter-kernelspec list
