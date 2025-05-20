@@ -83,6 +83,7 @@ apps=(\
   php \
   postgresql \
   python3 \
+  python3-ipykernel \
   python3-pip \
   python3-tk \
   qpdf \
