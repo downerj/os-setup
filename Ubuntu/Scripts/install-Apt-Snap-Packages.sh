@@ -69,6 +69,7 @@ apps=(\
   lynx \
   make \
   mesa-utils \
+  neofetch \
   nodejs \
   npm \
   ocaml-base \
