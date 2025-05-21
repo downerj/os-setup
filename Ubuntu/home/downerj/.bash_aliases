@@ -76,6 +76,7 @@ else
 fi
 
 PS1="$first_line\n$second_line "
+PROMPT_DIRTRIM=2
 
 unset black red yellow green cyan blue magneta white reset bold color
 unset git_line first_line second_line chevron chevron_colors chevron_str
