@@ -60,6 +60,8 @@ apps=(\
   libsdl2-ttf-dev \
   libsfml-dev \
   libssl-dev \
+  libtool \
+  libtool-bin \
   libvulkan-dev \
   libx11-dev \
   libx11-doc \
