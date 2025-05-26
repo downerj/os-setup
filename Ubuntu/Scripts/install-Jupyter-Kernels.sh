@@ -53,12 +53,12 @@ iruby register --force
 coursier launch --use-bootstrap almond -- --install
 
 #
-# JavaScript & TypeScript.
+# TypeScript.
 #
-#npm install --global \
-#  ijavascript \
-#  itypescript
-#.local/share/npm_user/bin/ijsinstall --install=local
+npm install \
+  --prefix ~/.local/share/npm_user \
+  itypescript
+.local/share/npm_user/node_modules/.bin/its --install=local
 
 unset kernels
 
