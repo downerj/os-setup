@@ -69,6 +69,8 @@ apps=(\
   libxcb-xinput-dev \
   libxcb-xkb-dev \
   libyaml-dev \
+  libczmq-dev \
+  libzmq3-dev \
   lshw \
   lynx \
   make \
