@@ -38,6 +38,6 @@ unset julia_bin
 #
 # Node.
 #
-npm_bin="$HOME/.local/share/npm_user/bin"
+npm_bin="$HOME/.local/share/npm_user/node_modules/.bin"
 [ -d "$npm_bin" ] && export PATH="$npm_bin:$PATH"
 unset npm_bin
