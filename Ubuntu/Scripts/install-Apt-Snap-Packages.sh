@@ -45,6 +45,8 @@ apps=(\
   kotlin \
   leocad \
   libassimp-dev \
+  libc++-dev \
+  libstdc++-14-dev \
   libgles-dev \
   libglew-dev \
   libglfw3-dev \
