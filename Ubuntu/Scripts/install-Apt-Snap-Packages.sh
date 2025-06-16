@@ -3,8 +3,8 @@
 # Note: Ruby/Rails needs the following packages:
 # build-essential ruby ruby-bundler ruby-dev rustc libssl-dev libyaml-dev zlib1g-dev libgmp-dev
 
-declare -a apps
-apps=(\
+declare -a apt_apps
+apt_apps=(\
   adb \
   ant \
   arduino \
@@ -122,5 +122,5 @@ apps=(\
   zenity \
   zlib1g-dev \
 )
-echo -e "Selected apps to install:\n${apps[*]}"
-sudo apt install ${apps[*]}
+echo -e "Selected Apt apps to install:\n${apt_apps[*]}"
+sudo apt install ${apt_apps[*]}
