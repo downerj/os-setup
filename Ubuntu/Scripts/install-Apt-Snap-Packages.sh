@@ -14,6 +14,7 @@ apps=(\
   bash-doc \
   build-essential \
   clang \
+  clang-tidy \
   cmake \
   curl \
   dnsutils \
