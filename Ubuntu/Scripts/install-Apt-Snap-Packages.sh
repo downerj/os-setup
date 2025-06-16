@@ -3,6 +3,9 @@
 # Note: Ruby/Rails needs the following packages:
 # build-essential ruby ruby-bundler ruby-dev rustc libssl-dev libyaml-dev zlib1g-dev libgmp-dev
 
+# Note: Clang for C++ (clang++) needs the following packages:
+# libstdc++-<version>-dev libc++-dev
+
 declare -a apt_apps
 apt_apps=(\
   adb \
