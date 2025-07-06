@@ -20,6 +20,7 @@ apt_apps=(\
   avrdude \
   bash-doc \
   build-essential \
+  cdrdao \
   clang \
   clang-tidy \
   cmake \
