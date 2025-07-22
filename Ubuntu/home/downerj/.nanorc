@@ -1,9 +1,12 @@
+set afterends
 set autoindent
 set linenumbers
 set locking
+set mouse
 set multibuffer
 set nonewlines
-set nowrap
+set quickblank
 set regexp
 set tabsize 2
 set tabstospaces
+set zap
