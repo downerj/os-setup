@@ -3,6 +3,7 @@
 declare -a apt_apps
 apt_apps=(\
   clang\
+  cmake\
   coreutils\
   curl\
   dnsutils\
