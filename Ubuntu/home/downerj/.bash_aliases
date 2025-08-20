@@ -51,7 +51,7 @@ white="37"
 reset="0"
 bold="1"
 
-git_line='`git branch 2>/dev/null | grep -e ^* | sed -E s/\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
+git_line='`[[ -n "$use_git" ]] && git branch 2>/dev/null | grep -e ^* | sed -E s/\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
 if [ $color_prompt = "yes" ]; then
   first_line="\[\e[$reset;$bold;${red}m\]bash \[\e[${yellow}m\]\u \[\e[${blue}m\]\H \[\e[${cyan}m\]\w \[\e[${green}m\]$git_line"
 else
