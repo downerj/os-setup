@@ -19,6 +19,7 @@ apt_apps=(\
   audacity \
   avrdude \
   bash-doc \
+  bat \
   build-essential \
   cdrdao \
   clang \
