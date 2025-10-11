@@ -58,6 +58,7 @@ else
   first_line="bash \u \H \w $git_line"
 fi
 
+#chevron=$(echo -e "\u276f")
 chevron=">"
 chevron_colors=("$magenta" "$red" "$yellow" "$green" "$cyan" "$blue")
 chevron_str=""
