@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # https://github.com/tiberiusbrown/Ardens/releases
-VERSION="0.24.5"
+VERSION="0.24.12"
 FILE="Ardens_linux_x64.zip"
 URL="https://github.com/tiberiusbrown/Ardens/releases/download/v$VERSION/$FILE"
 SHARE_DIR="$HOME/.local/share"
