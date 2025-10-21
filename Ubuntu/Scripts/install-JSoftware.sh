@@ -4,7 +4,7 @@
 version=9.6
 file="j${version}_linux64.tar.gz"
 url="https://www.jsoftware.com/download/j$version/install/$file"
-dir="j${version}_linux64"
+dir="j${version}"
 share_dir="$HOME/.local/share"
 icons_dir="$share_dir/icons/JSoftware"
 apps_dir="$share_dir/applications"
@@ -16,14 +16,16 @@ bin_dir="/usr/bin"
 pushd /tmp
 curl -L -O -R "$url"
 tar -x -v -z -f "$file"
-sudo "$dir/j$version/bin/install-usr.sh"
-popd
+sudo bash "$dir/bin/install-usr.sh"
+rm -f "$file"
 
 #
 # Copy the icons.
 #
 mkdir -p "$icons_dir/"
-cp "$dir/j$version/bin/icons/"* "$icons_dir/"
+cp "$dir/bin/icons/"* "$icons_dir/"
+rm -r -f "$dir/"
+popd
 
 #
 # Create the desktop launcher.
