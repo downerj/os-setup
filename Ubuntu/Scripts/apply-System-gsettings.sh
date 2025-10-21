@@ -10,7 +10,7 @@ gsettings set org.gnome.TextEditor style-scheme 'solarized-light'
 gsettings set org.gnome.TextEditor tab-width 2
 gsettings set org.gnome.TextEditor use-system-font false
 gsettings set org.gnome.desktop.calendar show-weekdate true
-gsettings set org.gnome.desktop.input-sources xkb-options ['compose:ralt']
+gsettings set org.gnome.desktop.input-sources xkb-options "['compose:ralt']"
 gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.session idle-delay 900
 gsettings set org.gnome.mutter workspaces-only-on-primary false
