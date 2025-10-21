@@ -87,7 +87,7 @@ apt_apps=(
   nodejs
   npm
   ocaml-base
-  openjdk-23-jdk
+  openjdk-25-jdk
   openssh-server
   pandoc
   perl
