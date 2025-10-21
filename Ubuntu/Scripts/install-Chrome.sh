@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # https://code.visualstudio.com/
-FILE="code.deb"
-URL="https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+FILE="chrome.deb"
+URL="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 
 #
 # Download and install the file.
