@@ -12,7 +12,7 @@ gsettings set org.gnome.TextEditor use-system-font false
 gsettings set org.gnome.desktop.calendar show-weekdate true
 gsettings set org.gnome.desktop.input-sources xkb-options ['compose:ralt']
 gsettings set org.gnome.desktop.interface clock-show-weekday true
-gsettings set org.gnome.desktop.session idle-delay uint32 900
+gsettings set org.gnome.desktop.session idle-delay 900
 gsettings set org.gnome.mutter workspaces-only-on-primary false
 gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'suspend'
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
