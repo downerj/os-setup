@@ -7,7 +7,7 @@ gsettings set org.gnome.TextEditor show-grid true
 gsettings set org.gnome.TextEditor show-line-numbers true
 gsettings set org.gnome.TextEditor spellcheck false
 gsettings set org.gnome.TextEditor style-scheme 'solarized-light'
-gsettings set org.gnome.TextEditor tab-width uint32 8
+gsettings set org.gnome.TextEditor tab-width 2
 gsettings set org.gnome.TextEditor use-system-font false
 gsettings set org.gnome.desktop.calendar show-weekdate true
 gsettings set org.gnome.desktop.input-sources xkb-options ['compose:ralt']
