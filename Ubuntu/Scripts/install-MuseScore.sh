@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # https://musescore.org/en/download
-VERSION="4.5.1"
-HASH="250800846"
+VERSION="4.6.2"
+HASH="252830930"
 FILE="MuseScore-Studio-${VERSION}.${HASH}-x86_64.AppImage"
 URL="https://cdn.jsdelivr.net/musescore/v$VERSION/$FILE"
 SHARE_DIR="$HOME/.local/share"
