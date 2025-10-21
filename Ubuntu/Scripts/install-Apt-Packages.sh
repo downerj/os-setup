@@ -6,10 +6,6 @@
 # Note: Clang for C++ (clang++) needs the following packages:
 # libstdc++-<version>-dev libc++-dev
 
-#
-# Apt packages.
-#
-
 declare -a apt_apps
 apt_apps=(
   adb
@@ -133,22 +129,3 @@ apt_apps=(
 )
 echo -e "Selected Apt apps to install:\n${apt_apps[*]}"
 sudo apt install ${apt_apps[*]}
-
-#
-# Snap packages.
-#
-
-declare -a snap_apps
-snap_apps=(
-  android-studio
-  blender
-  clion
-  intellij-idea-community
-  pycharm-community
-  webstorm
-)
-echo -e "Selected Snap apps to install\n:${snap_apps[*]}"
-for app in ${snap_apps[@]}
-do
-  sudo snap install --classic $app
-done
