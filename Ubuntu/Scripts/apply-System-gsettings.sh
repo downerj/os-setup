@@ -19,7 +19,7 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'no
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'nothing'
 gsettings set org.gnome.shell app-picker-layout [{}]
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
-gsettings set org.gnome.sheel.extensions.dash-to-dock isolate-monitors true
-gsettings set org.gnome.sheel.extensions.dash-to-dock isolate-workspaces true
-gsettings set org.gnome.sheel.extensions.dash-to-dock multi-monitor true
-gsettings set org.gnome.sheel.extensions.ding show-home false
+gsettings set org.gnome.shell.extensions.dash-to-dock isolate-monitors true
+gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces true
+gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
+gsettings set org.gnome.shell.extensions.ding show-home false
