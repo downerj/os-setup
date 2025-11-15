@@ -1,35 +1,5 @@
 # My Software List for Microsoft Windows
 
-## Utilities
-
-### Chrome Remote Desktop
-Remote desktop access tool
-- 🔗 Link (official website): [remotedesktop.google.com](https://remotedesktop.google.com)
-- ❔ Help (Google Support): [support.google.com/chrome/answer/1649523](https://support.google.com/chrome/answer/1649523)
-
-### iTunes
-Music playback &amp; streaming software
-- ⬇️ Download (Microsoft Store): [apps.microsoft.com/detail/9pb2mz1zmb1s](https://apps.microsoft.com/detail/9pb2mz1zmb1s)
-- ⬇️ Download (official website): [apple.com/itunes/](https://www.apple.com/itunes/)
-
-### QPDF
-Command-line tool for PDF transformation
-- ⬇️ Download (GitHub): [github.com/qpdf/qpdf/releases](https://github.com/qpdf/qpdf/releases)
-- 📄 Source code (GitHub): [github.com/qpdf/qpdf](https://github.com/qpdf/qpdf)
-
-### Rufus
-Software for writing bootable USB media
-- ⬇️ Download (official website): [rufus.ie/downloads/](https://rufus.ie/downloads/)
-- ⬇️ Download (GitHub): [github.com/pbatard/rufus/releases](https://github.com/pbatard/rufus/releases)
-- 📄 Source code (GitHub): [github.com/pbatard/rufus](https://github.com/pbatard/rufus)
-
-### VLC
-Multimedia player
-- ⬇️ Download (official website): [videolan.org/vlc/](https://www.videolan.org/vlc/)
-- 📄 Source code (official website): [videolan.org/vlc/download-sources.html](https://www.videolan.org/vlc/download-sources.html)
-
----
-
 ## Software Development Tools
 
 ### Assimp
@@ -279,3 +249,33 @@ Sound file converter for multiple video game file types
 ### WIT & WWT
 ISO & WBFS tools for Nintendo Wii
 - ⬇️ Download (official website): [wit.wiimm.de/download.html](https://wit.wiimm.de/download.html)
+
+---
+
+## Miscellaneous
+
+### Chrome Remote Desktop
+Remote desktop access tool
+- 🔗 Link (official website): [remotedesktop.google.com](https://remotedesktop.google.com)
+- ❔ Help (Google Support): [support.google.com/chrome/answer/1649523](https://support.google.com/chrome/answer/1649523)
+
+### iTunes
+Music playback &amp; streaming software
+- ⬇️ Download (Microsoft Store): [apps.microsoft.com/detail/9pb2mz1zmb1s](https://apps.microsoft.com/detail/9pb2mz1zmb1s)
+- ⬇️ Download (official website): [apple.com/itunes/](https://www.apple.com/itunes/)
+
+### QPDF
+Command-line tool for PDF transformation
+- ⬇️ Download (GitHub): [github.com/qpdf/qpdf/releases](https://github.com/qpdf/qpdf/releases)
+- 📄 Source code (GitHub): [github.com/qpdf/qpdf](https://github.com/qpdf/qpdf)
+
+### Rufus
+Software for writing bootable USB media
+- ⬇️ Download (official website): [rufus.ie/downloads/](https://rufus.ie/downloads/)
+- ⬇️ Download (GitHub): [github.com/pbatard/rufus/releases](https://github.com/pbatard/rufus/releases)
+- 📄 Source code (GitHub): [github.com/pbatard/rufus](https://github.com/pbatard/rufus)
+
+### VLC
+Multimedia player
+- ⬇️ Download (official website): [videolan.org/vlc/](https://www.videolan.org/vlc/)
+- 📄 Source code (official website): [videolan.org/vlc/download-sources.html](https://www.videolan.org/vlc/download-sources.html)
