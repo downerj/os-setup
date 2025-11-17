@@ -5,7 +5,9 @@ set number
 " Add end-of-line characters.
 "set list
 " Disable word wrapping.
-set nowrap
+"set nowrap
+" Enable word wrapping.
+set wrap
 " Configure tabs.
 filetype plugin indent on
 set tabstop=2
@@ -25,21 +27,5 @@ set hlsearch
 " Color scheme.
 " elflord, industry, koehler, murphy, pablo, torte
 colo industry
-
-" Enable the following if running GVim.
-if has('gui_running')
-  " ^Left and ^Right to move between tabs.  
-  nnoremap <C-Left> :tabprevious<CR>
-  nnoremap <C-Right> :tabnext<CR>
-
-  " Alt+Left and Alt+Right to reposition tabs. 
-  nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
-  nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
-  
-  " GUI initial dimensions.
-  set lines=20 columns=80
-
-  " GUI font.
-  set guifont=Terminus\ 12
-endif
-
+" Set wild mode to menu (:e, :cd, :Ex, etc.).
+set wildmenu
