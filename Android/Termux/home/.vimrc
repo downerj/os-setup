@@ -10,6 +10,7 @@ set number
 " Enable/disable word wrapping.
 "set nowrap
 set wrap
+set linebreak
 
 " Configure tabs.
 filetype plugin indent on
