@@ -40,15 +40,14 @@
             "type": "remainingProfiles"
         }
     ],
-    "theme": "system",
     "profiles": 
     {
         "defaults": 
         {
             "colorScheme": 
             {
-                "light": "Solarized Light",
-                "dark": "Campbell"
+                "dark": "Campbell",
+                "light": "Jimmy Light"
             },
             "cursorShape": "filledBox",
             "font": 
@@ -150,6 +149,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#CCCCCC",
             "yellow": "#C19C00"
+        },
+        {
+            "background": "#FFFFFF",
+            "black": "#000000",
+            "blue": "#000077",
+            "brightBlack": "#444444",
+            "brightBlue": "#0000FF",
+            "brightCyan": "#00CCCC",
+            "brightGreen": "#00CC00",
+            "brightPurple": "#FF00FF",
+            "brightRed": "#FF0000",
+            "brightWhite": "#AAAAAA",
+            "brightYellow": "#AAAA00",
+            "cursorColor": "#000000",
+            "cyan": "#007777",
+            "foreground": "#000000",
+            "green": "#007700",
+            "name": "Jimmy Light",
+            "purple": "#770077",
+            "red": "#770000",
+            "selectionBackground": "#000000",
+            "white": "#777777",
+            "yellow": "#777700"
         },
         {
             "background": "#282C34",
@@ -313,5 +335,6 @@
             "yellow": "#808000"
         }
     ],
+    "theme": "system",
     "themes": []
 }
