@@ -124,3 +124,13 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 - Uncheck **Show window contents while dragging**.
 - Uncheck **Slide open combo boxes**.
 - Uncheck **Smooth-scroll list boxes**.
+
+## File Explorer options
+- Open File Explorer.
+	- Run (Win+R): `explorer`
+- In the banner near the top of the window, click **See more** (three dots).
+- Click **Options**.
+- In the new Folder Options window, click the **View** tab.
+- In **Advanced settings**:
+	- Check **Decrease space between items (compact view)**.
+	- Uncheck **Hide extensions for known file types**.
