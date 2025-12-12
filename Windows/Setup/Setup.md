@@ -144,3 +144,12 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 - For the **Scheme**, select **Windows Inverted (system scheme)**.
 - Click the **Pointer Options** tab.
 - Uncheck **Hide pointer while typing**.
+
+## Keyboard
+- Open Settings.
+- Click **Accessibility**.
+- Under **Interaction**, click **Keyboard**.
+- Click the **>** arrow next to **Sticky Keys**.
+- Uncheck **Keyboard shortcut for Sticky Keys**.
+- Go back to **Keyboard**.
+- Check **Toggle Keys**. 
