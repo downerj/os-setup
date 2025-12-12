@@ -161,3 +161,36 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 - Follow the prompts, including creating a password for the new SSH key.
 - To view the public SSH key, type `Get-Content '.\.ssh\id_ed25519.pub'` and hit Enter.
   - Adjust the path above if the user SSH directory is different or if an algorithm other than Ed25519 was used for generating the key.
+
+## Console Host
+
+### App Shortcut
+- Open PowerShell.
+  - Run (Win+R): `pwsh` (PowerShell 7+) or `powershell` (Windows PowerShell)
+- Run the following script to create a shortcut for the Console Host to use in the current user's Start Menu.
+  ```powershell
+  Set-Location "$env:AppData\Microsoft\Windows\Start Menu\Programs"
+  $WshShell = New-Object -ComObject WScript.Shell
+  $Shortcut = $WshShell.CreateShortcut("$PWD\Console Host.lnk")
+  $Shortcut.TargetPath = "$env:SystemRoot\System32\conhost.exe"
+  $Shortcut.Save()
+  ```
+
+### Settings
+- Open the Console Host.
+  - Run (Win+R): `conhost`
+- Click on the app icon in the top-left corner of the title bar.
+- Click **Defaults** to change settings for future window sessions.
+  - Alternatively, click **Properties** to change settings for the current session.
+- Click the **Options** tab.
+- Under **Edit Options**, check **Use Ctrl+Shift+C/V as Copy/Paste**.
+- Click the **Layout** tab.
+- Under **Window Size**, set the **Width** to **100** and the **Height** to 12.
+- Click the **Colors** tab.
+- Click the **Screen Text** radio button.
+- Click the far-right color in the color row (white, by default).
+- Under **Selected Color Values**, set **Red**, **Green** and **Blue** each to **255**.
+- Click the **Screen Background** radio button.
+- Click the far-left color in the color row (black, by default).
+- Under **Selected Color Values**, set **Red**, **Green** and **Blue** each to **0**.
+- Under **Opacity**, move the slider until the value is **90**.
