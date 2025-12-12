@@ -10,49 +10,49 @@
 - Sign out of OneDrive.
 - Uninstall OneDrive.
 - Open the Registry Editor.
-	- Run (Win+R): `regedit`
+  - Run (Win+R): `regedit`
 - Navigate to `Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`.
 - For each folder that contains `OneDrive\` in the path:
-	- Double-click to edit the value.
-	- Delete the `OneDrive\` portion (including the slash).
+  - Double-click to edit the value.
+  - Delete the `OneDrive\` portion (including the slash).
 - Close the Registry Editor.
 - Restart the PC.
 - After logging back in, open Explorer.
-	- Run (Win+R): `explorer`
+  - Run (Win+R): `explorer`
 - Navigate to the home directory.
-	- Explorer: `Home` or `%USERPROFILE%`.
+  - Explorer: `Home` or `%USERPROFILE%`.
 - Follow these steps for the `Desktop`, `Documents` and `Pictures` folders (and others, as needed):
-	- Right-click on the folder and click **Properties**.
-	- Click on the **Location** tab.
-	- Ensure that the location in the text box does not include `OneDrive\`.
+  - Right-click on the folder and click **Properties**.
+  - Click on the **Location** tab.
+  - Ensure that the location in the text box does not include `OneDrive\`.
 
 ## Control Panel
 
 ### Layout
 - Open the Control Panel.
-	- Explorer: `Control Panel`
-	- Run (Win+R): `control`
+  - Explorer: `Control Panel`
+  - Run (Win+R): `control`
 - Change **View By** to **Large icons**
 
 ### Power Options
 Note: Fast startup needs to be disabled in order to correctly share drives with Ubuntu when dual-booting.
 - Open **Power Options**.
-	- Explorer: `Control Panel\All Control Panel Items\Power Options`
+  - Explorer: `Control Panel\All Control Panel Items\Power Options`
 - Select **Choose what the power buttons do**.
-	- Explorer: `Control Panel\All Control Panel Items\Power Options\System Settings`
+  - Explorer: `Control Panel\All Control Panel Items\Power Options\System Settings`
 - Click **Change settings that are currently unavailable**.
 - Uncheck **Turn on fast startup**.
 - Click **Save changes**.
 - Click **Change when the computer sleeps**.
-	- Explorer: `Control Panel\All Control Panel Items\Power Options\Edit Plan Settings`
+  - Explorer: `Control Panel\All Control Panel Items\Power Options\Edit Plan Settings`
 - For **Put the computer to sleep:** &rarr; **On battery**, choose **Never**.
 - For **Put the computer to sleep:** &rarr; **Plugged in**, choose **Never**.
 - Click **Save changes**.
 
 ## Startup items
 - Open the Task Manager.
-	- Run (Win+R): `taskmgr`
-	- Keyboard shortcut: Ctrl + Shift + Esc
+  - Run (Win+R): `taskmgr`
+  - Keyboard shortcut: Ctrl + Shift + Esc
 - Click **Startup apps**.
 - Disable apps as needed (OneDrive, MS Edge, etc.).
 
@@ -112,7 +112,7 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 
 ## Performance settings
 - Open Performance Options.
-	- Run (Win+R): `SystemPropertiesPerformance`
+  - Run (Win+R): `SystemPropertiesPerformance`
 - Click the **Visual Effects** tab.
 - Click the **Custom:** settings.
 - Uncheck **Animate controls and elements inside windows**.
@@ -127,10 +127,20 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 
 ## File Explorer options
 - Open File Explorer.
-	- Run (Win+R): `explorer`
+  - Run (Win+R): `explorer`
 - In the banner near the top of the window, click **See more** (three dots).
 - Click **Options**.
 - In the new Folder Options window, click the **View** tab.
 - In **Advanced settings**:
-	- Check **Decrease space between items (compact view)**.
-	- Uncheck **Hide extensions for known file types**.
+  - Check **Decrease space between items (compact view)**.
+  - Uncheck **Hide extensions for known file types**.
+
+## Cursor
+- Open the Control Panel.
+  - Run (Win+R): `control`
+- Click **Mouse**.
+  - Run (Win+R): `main.cpl`
+- Click the **Pointers** tab.
+- For the **Scheme**, select **Windows Inverted (system scheme)**.
+- Click the **Pointer Options** tab.
+- Uncheck **Hide pointer while typing**.
