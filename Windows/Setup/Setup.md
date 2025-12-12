@@ -153,3 +153,11 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 - Uncheck **Keyboard shortcut for Sticky Keys**.
 - Go back to **Keyboard**.
 - Check **Toggle Keys**. 
+
+## SSH Keys (GitHub, etc.)
+- Open PowerShell.
+  - Run (Win+R): `pwsh` (PowerShell 7+) or `powershell` (Windows PowerShell)
+- Type `ssh-keygen` and hit Enter.
+- Follow the prompts, including creating a password for the new SSH key.
+- To view the public SSH key, type `Get-Content '.\.ssh\id_ed25519.pub'` and hit Enter.
+  - Adjust the path above if the user SSH directory is different or if an algorithm other than Ed25519 was used for generating the key.
