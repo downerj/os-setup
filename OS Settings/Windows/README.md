@@ -124,6 +124,7 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 - Uncheck **Show window contents while dragging**.
 - Uncheck **Slide open combo boxes**.
 - Uncheck **Smooth-scroll list boxes**.
+- Click **OK** to save changes and close the window.
 
 ## File Explorer options
 - Open File Explorer.
@@ -134,6 +135,7 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 - In **Advanced settings**:
   - Check **Decrease space between items (compact view)**.
   - Uncheck **Hide extensions for known file types**.
+- Click **OK** to save changes and close the options window.
 
 ## Cursor
 - Open the Control Panel.
@@ -144,6 +146,7 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 - For the **Scheme**, select **Windows Inverted (system scheme)**.
 - Click the **Pointer Options** tab.
 - Uncheck **Hide pointer while typing**.
+- Click **OK** to save changes and close the window.
 
 ## Keyboard
 - Open Settings.
@@ -194,6 +197,7 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 - Click the far-left color in the color row (black, by default).
 - Under **Selected Color Values**, set **Red**, **Green** and **Blue** each to **0**.
 - Under **Opacity**, move the slider until the value is **90**.
+- Click **OK** to save changes and close the properties window.
 
 ## Miscellaneous
 
@@ -212,5 +216,5 @@ For any apps that appear blurry, especially on a second monitor, try the followi
 - In the High DPI settings window, under **Program DPI**, check **Use this setting to fix scaling problems...**.
 - For **Use the DPI that's set for my main display when**, click the dropdown and select **I open this program**.
 - Under **High DPI scaling override**, check **Override high DPI scaling behavior...** and in the dropdown, select **Application**.
-- Click **OK** to close the High DPI settings window.
-- Click **OK** to close the Properties window.
+- Click **OK** to save changes and close the High DPI settings window.
+- Click **OK** to save changes and close the Properties window.
