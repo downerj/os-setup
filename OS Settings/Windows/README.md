@@ -194,3 +194,23 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 - Click the far-left color in the color row (black, by default).
 - Under **Selected Color Values**, set **Red**, **Green** and **Blue** each to **0**.
 - Under **Opacity**, move the slider until the value is **90**.
+
+## Miscellaneous
+
+### App display
+For any apps that appear blurry, especially on a second monitor, try the following:
+- Find the app launcher in Start, Search, the Taskbar or File Explorer.
+- Right-click on the app launcher.
+  - For apps on the Taskbar or in File Explorer:
+    - Some apps have their own custom context menu; in that case, in the custom menu, right-click on the icon that shows the app itself.
+    - Alternatively, while the original app launcher is visible, try holding Shift and right-clicking on the app to load the system's default context menu for the app.
+  - For apps in Start or Search:
+    - You may need to first click **Open File Location** to show the app launcher/shortcut in File Explorer, and then right-click on that launcher/shortcut.
+- Click **Properties**.
+- In the Properties window, click the **Compatibility** tab (if present).
+- Under **Settings**, click **Change high DPI settings**.
+- In the High DPI settings window, under **Program DPI**, check **Use this setting to fix scaling problems...**.
+- For **Use the DPI that's set for my main display when**, click the dropdown and select **I open this program**.
+- Under **High DPI scaling override**, check **Override high DPI scaling behavior...** and in the dropdown, select **Application**.
+- Click **OK** to close the High DPI settings window.
+- Click **OK** to close the Properties window.
