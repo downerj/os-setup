@@ -1,0 +1,48 @@
+function! SetColorSchemeForGnome()
+  let color_scheme = system('gsettings
+        \ get org.gnome.desktop.interface color-scheme')
+  if color_scheme =~ 'prefer-light' || color_scheme =~ 'default'
+    colorscheme default
+  else
+    colorscheme elflord
+  endif
+endfunction
+
+function! SetColorSchemeForWindows()
+  let color_scheme = system('powershell
+        \ Get-ItemPropertyValue
+        \ -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize\"
+        \ -Name AppsUseLightTheme')
+  if color_scheme == 1
+    colorscheme default
+    set background=light
+  else
+    colorscheme elflord
+    set background=dark
+  endif
+endfunction
+
+" Enable the following if running GVim.
+if has('gui_running')
+  " ^Left and ^Right to move between tabs.  
+  nnoremap <C-Left> :tabprevious<CR>
+  nnoremap <C-Right> :tabnext<CR>
+
+  " Alt+Left and Alt+Right to reposition tabs. 
+  nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+  nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
+  
+  " GUI initial dimensions.
+  set lines=20 columns=80
+
+  " GUI font.
+  set guifont=Ubuntu\ Mono\ 12
+
+  " Set the cursor.
+  highlight Cursor gui=reverse guifg=NONE guibg=NONE
+  set guicursor=a:block-Cursor
+
+  "call SetColorSchemeForGnome()
+  call SetColorSchemeForWindows()
+endif
+

@@ -1,0 +1,13 @@
+set afterends
+set autoindent
+set linenumbers
+set locking
+set mouse
+set multibuffer
+set nonewlines
+set quickblank
+set regexp
+set softwrap
+set tabsize 2
+set tabstospaces
+set zap
