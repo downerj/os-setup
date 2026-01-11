@@ -36,7 +36,7 @@ if has('gui_running')
   set lines=20 columns=80
 
   " GUI font.
-  set guifont=Ubuntu\ Mono\ 12
+  set guifont=Fantasque_Sans_Mono:h12:cANSI:qDRAFT
 
   " Set the cursor.
   highlight Cursor gui=reverse guifg=NONE guibg=NONE
