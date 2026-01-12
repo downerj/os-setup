@@ -8,9 +8,9 @@ set number
 "set list
 
 " Enable/disable word wrapping.
-"set nowrap
-set wrap
-set linebreak
+set nowrap
+"set wrap
+"set linebreak
 
 " Configure tabs.
 filetype plugin indent on
@@ -27,6 +27,15 @@ set directory=~/vimfiles/swapfiles//
 " Open vertical splits to the right.
 set splitright
 
+" Tab names only show file tail name.
+set guitablabel=%t\ %m
+
+" Always show the status line.
+set laststatus=2
+
+" Add the full file path to the status line.
+set statusline+=%F\ %m
+
 " Automatically change the directory to the current file's folder.
 "set autochdir
 autocmd BufEnter * silent! lcd %:p:h
@@ -35,9 +44,30 @@ autocmd BufEnter * silent! lcd %:p:h
 set hlsearch
 
 " Color scheme.
-" elflord, industry, koehler, murphy, pablo, torte
-"colo industry
+" My choices: elflord, industry, koehler, murphy, pablo, torte
+" Note: torte disables bold text.
+colorscheme torte
+set background=dark
 
 " Set wild mode to menu (:e, :cd, :Ex, etc.).
 set wildmenu
 
+" Use pop-up menu for wild mode.
+set wildoptions+=pum
+
+" Enable the mouse.
+set mouse=a
+
+" Ctrl+Shift+Left and Ctrl+Shift+Right to move between tabs.
+nnoremap <C-S-Left> :tabprevious<CR>
+nnoremap <C-S-Right> :tabnext<CR>
+
+" Alt+Left and Alt+Right to reposition tabs.
+"nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+"nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
+
+" Shift+Scroll for horizontal scrolling
+nnoremap <S-ScrollWheelUp> <ScrollWheelLeft>
+nnoremap <S-ScrollWheelDown> <ScrollWheelRight>
+
+" Terminal on bottom, 10 rows tall
