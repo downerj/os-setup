@@ -45,6 +45,9 @@ if has('gui_running')
   set guioptions-=r
   set guioptions-=b
 
+  " Tab names only show file tail name + modify flag.
+  set guitablabel=%t\ %m
+
   "call SetColorSchemeForGnome()
   call SetColorSchemeForWindows()
 endif

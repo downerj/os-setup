@@ -17,6 +17,7 @@ filetype plugin indent on
 set tabstop=2
 set shiftwidth=2
 set expandtab
+"let &showbreak='    '
 
 " Configure backspace.
 set backspace=indent,eol,start
@@ -27,13 +28,10 @@ set directory=~/vimfiles/swapfiles//
 " Open vertical splits to the right.
 set splitright
 
-" Tab names only show file tail name.
-set guitablabel=%t\ %m
-
 " Always show the status line.
 set laststatus=2
 
-" Add the full file path to the status line.
+" Add the full file path + modify flag to the status line.
 set statusline+=%F\ %m
 
 " Automatically change the directory to the current file's folder.
@@ -46,7 +44,7 @@ set hlsearch
 " Color scheme.
 " My choices: elflord, industry, koehler, murphy, pablo, torte
 " Note: torte disables bold text.
-colorscheme torte
+colorscheme default
 set background=dark
 
 " Set wild mode to menu (:e, :cd, :Ex, etc.).
@@ -71,3 +69,8 @@ nnoremap <S-ScrollWheelUp> <ScrollWheelLeft>
 nnoremap <S-ScrollWheelDown> <ScrollWheelRight>
 
 " Terminal on bottom, 10 rows tall
+"botright term ++rows=10
+
+" Disable visual bell/flash.
+set belloff=all
+
