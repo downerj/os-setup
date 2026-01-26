@@ -7,17 +7,22 @@
   ;; Set directory for auto-generated backup files.
   (setq backup-directory-alist `(("." . "~/.emacs-saves")))
   ;; Set options for tabs, parentheses, etc.
-  (setq indent-tab-mode nil
-	tab-width 2
-	tab-always-indent nil
-	c-default-style "k&r"
-	c-basic-offset 2
-	word-wrap t)
+  (setq indent-tab-mode nil)
+  (setq tab-width 2)
+  (setq tab-always-indent nil)
+  (setq c-default-style "k&r")
+  (setq c-basic-offset 2)
+  (setq word-wrap t)
   ;; Line number options.
-  (global-display-line-numbers-mode t)
+  (setq global-display-line-numbers-mode t)
   (setq global-linum-mode nil)
   ;; Startup screen options.
-  (inhibit-startup-screen t))
+  (setq inhibit-startup-screen t)
+  ;; Disable bells
+  (setq visible-bell nil)
+  (setq ring-bell-function 'ignore)
+  (when (fboundp 'set-message-beep)
+    (set-message-beep 'silent)))
 (add-hook 'window-setup-hook 'my/window-setup)
 
 ;; Detect system color mode (GNOME).
