@@ -63,6 +63,15 @@ Note: BitLocker/encryption needs to be disabled in order to install Ubuntu for d
 - Uncheck **Device encryption**.
 - When prompted "Turn off device encryption?", select **Turn off**.
 
+## Secure Boot
+Note: Secure Boot needs to be disabled in order to install Ubuntu for dual-booting.
+- Open Settings.
+- Click **System**.
+- Click **Recovery**.
+- Under **Recovery options** > **Advanced startup**, click **Restart now**.
+- After the system reboots into the UEFI/BIOS settings app, navigate through each menu until you find an option for Secure Boot (usually in "Boot" or "Security") and disable it.
+- Find the menu option to save changes & exit/restart. 
+
 ## Appearance
 - Open Settings.
 - Click **Personalization** &rarr; **Colors**.
