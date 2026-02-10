@@ -72,6 +72,28 @@ Note: Secure Boot needs to be disabled in order to install Ubuntu for dual-booti
 - After the system reboots into the UEFI/BIOS settings app, navigate through each menu until you find an option for Secure Boot (usually in "Boot" or "Security") and disable it.
 - Find the menu option to save changes & exit/restart. 
 
+## System clock fix (when dual-booting)
+If the system clock on Windows is incorrect after dual-booting another operating system (e.g. Ubuntu), try one of the following options (**not** both).
+### Set Windows to use UTC
+- Boot into Windows and open Terminal as administrator.
+  - Right-click on the Start Menu.
+  - Select Terminal (Admin).
+- Run the following command:
+  ```pwsh
+  Set-ItemProperty `
+    -Path "HKLM:\System\CurrentControlSet\Control\TimeZoneInformation" `
+    -Name RealTimeIsUniversal `
+    -Value 1
+  ```
+- Reboot.
+### Set Ubuntu to use local time
+- Boot into Ubuntu and open a terminal.
+- Run the following command:
+  ```bash
+  timedatectl set-local-rtc 1 --adjust-system-clock
+  ```
+- Reboot.
+
 ## Appearance
 - Open Settings.
 - Click **Personalization** &rarr; **Colors**.
