@@ -1,40 +1,43 @@
 {
-  "workbench.startupEditor": "none",
-  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "chat.agent.enabled": false,
+  "chat.agentsControl.enabled": false,
   "chat.commandCenter.enabled": false,
-  "workbench.sideBar.location": "right",
-  "terminal.integrated.fontFamily": "'Cascadia Code', 'CMU Typewriter Text', 'Cascadia Code', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
-  "terminal.integrated.fontWeightBold": "normal",
-  "editor.fontFamily": "'Cascadia Code', 'CMU Typewriter Text', 'Cascadia Code', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
+  "editor.fontFamily": "'Fantasque Sans Mono', 'CMU Typewriter Text', 'Cascadia Code', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
   "editor.fontLigatures": true,
-  "editor.tabSize": 2,
+  "editor.fontSize": 16,
   "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "indent",
-  "terminal.integrated.defaultProfile.windows": "PowerShell 7",
+  "git.showActionButton": {
+    "sync": false
+  },
+  "glassit.alpha": 240,
+  "security.workspace.trust.untrustedFiles": "open",
+  "telemetry.editStats.enabled": false,
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.windows": "PowerShell 7 🖥️",
+  "terminal.integrated.fontFamily": "'Fantasque Sans Mono', 'CMU Typewriter Text', 'Cascadia Code', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.profiles.windows": {
-    "PowerShell 7": {
-      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
-      "icon": "terminal-powershell",
+    "PowerShell 7 🖥️": {
       "args": [
         "-NoExit",
         "-Command",
         "$useGit = \"True\""
-      ]
-    },
-    "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
       ],
-      "args": [],
-      "icon": "terminal-cmd"
-    },
-    "Git Bash": {
-      "source": "Git Bash"
+      "icon": "terminal-powershell",
+      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
     }
   },
+  "update.showReleaseNotes": false,
   "window.autoDetectColorScheme": true,
+  "window.commandCenter": true,
   "window.restoreWindows": "none",
-  "security.workspace.trust.untrustedFiles": "open"
+  "workbench.panel.defaultLocation": "top",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none"
 }
