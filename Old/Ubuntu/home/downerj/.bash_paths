@@ -4,7 +4,7 @@
 bin="$HOME/bin"
 local_bin="$HOME/.local/bin"
 [ -d "$bin" ] && export PATH="$bin:$PATH"
-[ -d "$local_bin" ] && export PATH ="$local_bin:$PATH"
+[ -d "$local_bin" ] && export PATH="$local_bin:$PATH"
 unset bin local_bin
 
 #
