@@ -70,6 +70,8 @@ cyan="96"
 blue="94"
 magenta="95"
 white="97"
+defl="39"
+bold="1"
 reset="0"
 
 # If git is supported, then get the branch/commit name
@@ -94,7 +96,7 @@ function my_unuse_git () {
 # First line of the custom prompt
 if [[ $(my_has_color) == 'true' ]]
 then
-  first_line="\[\e[$reset;${red}m\]\u\[\e[${reset}m\]@\[\e[${green}m\]\H\[\e[${reset}m\]:\[\e[${cyan}m\]\w\[\e[${yellow}m\$(my_write_git)\]"
+  first_line="\[\e[$reset;$bold;${red}m\]\u\[\e[${defl}m\]@\[\e[${green}m\]\H\[\e[${defl}m\]:\[\e[${cyan}m\]\w\[\e[${yellow}m\$(my_write_git)\]"
 else
   first_line="\u@\H:\w\$(my_write_git)"
 fi
@@ -117,7 +119,7 @@ unset chevron color chevron_colors
 # Second line of the custom prompt: put it together
 if [[ $(my_has_color) == 'true' ]]
 then
-  second_line="\[\e[${reset}m\]$chevron_string\[\e[${reset}m\]"
+  second_line="\[\e[$defl;${bold}m\]$chevron_string\[\e[${reset}m\]"
 else
   second_line="$chevron_string"
 fi
