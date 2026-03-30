@@ -1,74 +1,80 @@
-" Auto-detect syntax highlighting.
+" Auto-detect syntax highlighting
 syntax on
 
-" Add line numbers.
+" Add line numbers
 set number
 
-" Add end-of-line characters.
+" Add end-of-line characters
 "set list
 
-" Enable/disable word wrapping.
-"set nowrap
-set wrap
-set linebreak
+" Enable/disable word wrapping
+set nowrap
+"set wrap
+"set linebreak
 
-" Configure tabs.
+" Configure tabs to 2 spaces
 filetype plugin indent on
 set tabstop=2
 set shiftwidth=2
 set expandtab
+"let &showbreak='    '
 
-" Configure backspace.
+" Allow backspacing across indents and line breaks
 set backspace=indent,eol,start
 
-" Set the swap directory.
+" Set the swap directory
 set directory=~/.vim/swapfiles//
 
-" Open vertical splits to the right.
+" Open vertical splits to the right
 set splitright
 
-" Automatically change the directory to the current file's folder.
+" Always show the status line
+"set laststatus=2
+
+" Add the full file path and modify flag to the status line
+"set statusline+=%F\ %m
+
+" Automatically change the directory to the current file's folder
 "set autochdir
 autocmd BufEnter * silent! lcd %:p:h
 
-" Highlight regex searches.
+" Highlight searches
 set hlsearch
+"set nohlsearch
 
-" Color scheme.
-" elflord, industry, koehler, murphy, pablo, torte
-"colo industry
+" Set the color scheme
+" Examples: elflord, industry, koehler, murphy, pablo, torte
+colorscheme default
+set background=dark
 
-" Set wild mode to menu (:e, :cd, :Ex, etc.).
+" Set wild mode to menus (:e, :cd, :Ex, etc.)
 set wildmenu
 
-function! SetColorSchemeForGnome()
-  let color_scheme = system('gsettings get org.gnome.desktop.interface color-scheme')
-  if color_scheme =~ 'prefer-light' || color_scheme =~ 'default'
-    colorscheme default
-  else
-    colorscheme elflord
-  endif
-endfunction
+" Use pop-up menu for wildmode
+set wildoptions+=pum
 
-" Enable the following if running GVim.
-if has('gui_running')
-  " ^Left and ^Right to move between tabs.  
-  nnoremap <C-Left> :tabprevious<CR>
-  nnoremap <C-Right> :tabnext<CR>
+" Enable mouse support
+set mouse=a
 
-  " Alt+Left and Alt+Right to reposition tabs. 
-  nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
-  nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
-  
-  " GUI initial dimensions.
-  set lines=20 columns=80
+" Ctrl+Shift+Left and Ctrl+Shift+Right move between tabs
+nnoremap <C-S-Left> :tabprevious<CR>
+nnoremap <C-S-Right> :tabnext<CR>
 
-  " GUI font.
-  set guifont=Ubuntu\ Mono\ 12
+" Alt+Left and Alt+Right reposition tabs
+"nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+"nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 
-  " Set the cursor.
-  highlight Cursor gui=reverse guifg=NONE guibg=NONE
-  set guicursor=a:block-Cursor
+" Shift+Scroll scrolls horizontally
+nnoremap <S-ScrollWheelUp> <ScrollWheelLeft>
+nnoremap <S-ScrollWheelDown> <ScrollWheelRight>
 
-  call SetColorSchemeForGnome()
+" Terminal on bottom, 10 rows tall
+"botright term ++rows=10
+
+" Disable the visual bell/flash
+set belloff=all
+
+if !has('win32')
+  source "~/.gvimrc"
 endif
+
