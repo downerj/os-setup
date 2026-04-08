@@ -58,8 +58,16 @@ function My_GitDeletePrunedBranches {
     }
 }
 
-function My_GetBranchName {
+function My_GitGetBranchName {
   git rev-parse --abbrev-ref HEAD
+}
+
+function My_GitGetBranchName {
+  git branch | Select-String '^\*' | ForEach-Object { $_.Line -replace '^\* (.+)$','($1) ' }
+}
+
+function My_GitGetRepo {
+  git rev-parse --show-toplevel | Split-Path -Leaf
 }
 
 function My_GetColorPrompt {
@@ -69,7 +77,7 @@ function My_GetColorPrompt {
   # $dirStr = "$cyan$(Split-Path -Path (Get-Location) -Leaf)"
   $dirStr = "$cyan$(Get-Location)"
   if ($Global:useGit -eq $true) {
-    $gitStr = "`r`n$reset[${yellow}git$reset] $yellow$(My_GetBranchName)"
+    $gitStr = "`r`n$reset[${yellow}git$reset] $yellow$(My_GitGetBranchName)"
   }
   if ($nestedPromptLevel -eq 0) {
     $chevronStr = "`r`n$magenta>$red>$yellow>$green>$cyan>$blue>$reset "
@@ -87,7 +95,7 @@ function My_GetNoColorPrompt {
   # $dirStr = Split-Path -Path (Get-Location) -Leaf
   $dirStr = Get-Location
   if ($Global:useGit -eq $true) {
-    $gitStr = "`r`n[git] $(My_GetBranchName)"
+    $gitStr = "`r`n[git] $(My_GitGetBranchName)"
   }
   if ($nestedPromptLevel -eq 0) {
     $chevronStr = "`r`n>>>>>> "
