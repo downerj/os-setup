@@ -12,70 +12,48 @@ These settings are meant to be added directly to the user settings JSON file, th
 
 The JSON file can be sorted by opening the Command Palette (**Ctrl** + **Shift** + **P** or **Cmd** + **Shift** + **P**) and searching for the command **JSON: Sort Document** (provided by the JSON Language Features extension). Note that using the commands **Sort Lines Ascending** and **Sort Lines Descending** are not meant for JSON and will break nesting.
 
-### Chat settings
+### JSON
 ```json
-"chat.agent.enabled": false,
-"chat.agentsControl.enabled": false,
-"chat.commandCenter.enabled": false
-```
-
-### Editor settings
-```json
-"editor.fontFamily": "'Fantasque Sans Mono', 'CMU Typewriter Text', 'Cascadia Code', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
-"editor.fontLigatures": true,
-"editor.fontSize": 16,
-"editor.renderWhitespace": "all",
-"editor.tabSize": 2,
-"editor.wordWrap": "on",
-"editor.wrappingIndent": "indent"
-```
-
-### Source control settings
-```json
-"git.showActionButton": {
-  "sync": false
+{
+  "chat.agent.enabled": false,
+  "chat.agentsControl.enabled": "hidden",
+  "chat.commandCenter.enabled": false,
+  "editor.fontFamily": "'Fantasque Sans Mono', 'Cascadia Code', 'CMU Typewriter Text', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent",
+  "git.showActionButton": {
+    "sync": false
+  },
+  "telemetry.editStats.enabled": false,
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.windows": "PowerShell 7 🖥️",
+  "terminal.integrated.fontFamily": "'Cascadia Code', 'CMU Typewriter Text', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell 7 🖥️": {
+      "args": [
+        "-NoExit",
+        "-Command",
+        "$useGit = \"True\""
+      ],
+      "icon": "terminal-powershell",
+      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+    }
+  },
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": true,
+  "window.restoreWindows": "none",
+  "workbench.panel.defaultLocation": "top",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none"
 }
-```
-
-### Telemetry settings
-```json
-"telemetry.editStats.enabled": false,
-"telemetry.feedback.enabled": false,
-"telemetry.telemetryLevel": "off"
-```
-
-### Terminal settings
-```json
-"terminal.integrated.defaultProfile.windows": "PowerShell 7 🖥️",
-"terminal.integrated.fontFamily": "'Fantasque Sans Mono', 'CMU Typewriter Text', 'Cascadia Code', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
-"terminal.integrated.fontSize": 16,
-"terminal.integrated.fontWeightBold": "normal",
-"terminal.integrated.profiles.windows": {
-  "PowerShell 7 🖥️": {
-    "args": [
-      "-NoExit",
-      "-Command",
-      "$useGit = \"True\""
-    ],
-    "icon": "terminal-powershell",
-    "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
-  }
-}
-```
-
-### Window settings
-```json
-"window.autoDetectColorScheme": true,
-"window.commandCenter": true,
-"window.restoreWindows": "none"
-```
-
-### Workbench settings
-```json
-"workbench.panel.defaultLocation": "top",
-"workbench.secondarySideBar.defaultVisibility": "hidden",
-"workbench.sideBar.location": "right",
-"workbench.startupEditor": "none"
 ```
 
 ## Third-party extensions
