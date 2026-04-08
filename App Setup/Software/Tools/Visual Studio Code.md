@@ -18,7 +18,7 @@ The JSON file can be sorted by opening the Command Palette (**Ctrl** + **Shift**
   "chat.agent.enabled": false,
   "chat.agentsControl.enabled": "hidden",
   "chat.commandCenter.enabled": false,
-  "editor.fontFamily": "'Fantasque Sans Mono', 'Cascadia Code', 'CMU Typewriter Text', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
+  "editor.fontFamily": "'Cascadia Code', 'CMU Typewriter Text', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.renderWhitespace": "all",
@@ -40,7 +40,7 @@ The JSON file can be sorted by opening the Command Palette (**Ctrl** + **Shift**
       "args": [
         "-NoExit",
         "-Command",
-        "$useGit = \"True\""
+        "$Global:useGit = \"True\""
       ],
       "icon": "terminal-powershell",
       "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
