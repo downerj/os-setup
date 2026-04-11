@@ -28,20 +28,6 @@ $white = "$esc[97m"
 $default = "$esc[99m"
 $reset = "$esc[0m"
 
-function My_GitGetBranchName {
-  $branch = git rev-parse --abbrev-ref HEAD
-  if ($branch -eq $null) {
-    return ""
-  }
-  if ($branch -eq "HEAD") {
-    $branch = git rev-parse --short HEAD
-  }
-  if ($branch -eq $null) {
-    return " (no branches)"
-  }
-  return " ($branch)"
-}
-
 function My_GitSetUseGit {
   $Global:useGit = $true
 }
@@ -56,10 +42,6 @@ function My_GitDeletePrunedBranches {
     | ForEach-Object {
       git branch --delete --force ($_.ToString().Trim().Split()[0])
     }
-}
-
-function My_GitGetBranchName {
-  git rev-parse --abbrev-ref HEAD
 }
 
 function My_GitGetBranchName {
