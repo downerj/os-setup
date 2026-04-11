@@ -123,7 +123,10 @@ Set-PSReadLineOption -AddToHistoryHandler {
   param(
     [string]$command
   )
-  return ($command -like ' *')
+  if ($command -like ' *') {
+    return $false
+  }
+  return $true
 }
 
 function My_Uninstall {
