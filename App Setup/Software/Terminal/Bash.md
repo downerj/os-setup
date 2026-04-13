@@ -263,7 +263,7 @@ PS1="$first_line\n$second_line "
 unset black red yellow green cyan blue magenta white reset
 unset git_line first_line second_line chevron_string
 
-# Trim the prompt's working directory field (\w) down to two parents
+# Trim the prompt's working directory field (\w) down to a certain number of parent directories
 PROMPT_DIRTRIM=2
 
 ##
@@ -326,10 +326,17 @@ umask 022
 ```
 
 ## ~/.inputrc
+The top lines will set the Tab key to display all options on their own lines, and Shift+Tab for menu complete.
+```bash
+Tab: complete
+"\e[Z": menu-complete
+set show-all-if-unmodified on
+```
+
+Alternatively, to always have menu complete and backwards completion, you can change the top lines to:
 ```bash
 Tab: menu-complete
 "\e[Z": menu-complete-backward
-set show-all-if-unmodified on
 ```
 
 ## ~/.dircolors
