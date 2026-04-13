@@ -31,10 +31,24 @@ The JSON file can be sorted by opening the Command Palette (**Ctrl** + **Shift**
   "telemetry.editStats.enabled": false,
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.linux": "Bash (Login, Git) 🖥️",
   "terminal.integrated.defaultProfile.windows": "PowerShell 7 🖥️",
   "terminal.integrated.fontFamily": "'Cascadia Code', 'CMU Typewriter Text', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.profiles.linux": {
+      "Bash (Login, Git) 🖥️": {
+          "args": [
+              "bash",
+              "-l"
+          ],
+          "env": {
+              "_my_use_git": "true"
+          },
+          "icon": "terminal-bash",
+          "path": "/usr/bin/env"
+      }
+  },
   "terminal.integrated.profiles.windows": {
     "PowerShell 7 🖥️": {
       "args": [
