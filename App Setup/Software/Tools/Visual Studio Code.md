@@ -81,3 +81,20 @@ The JSON file can be sorted by opening the Command Palette (**Ctrl** + **Shift**
 | ms-vscode.cpptools | C/C++ |
 | s-nlf-fh.glassit | GlassIt-VSC |
 
+## Custom Desktop Launcher (Linux)
+
+Because certain desktop environments (e.g. GNOME) now use Wayland, certain extensions that rely on X11 functionality may not work properly out of the box. For example, GlassIt-VSC depends on X11 for its transparency.
+As a workaround, VS Code is able to start using X11/XWayland using the `--ozone-platform=X11` option.
+
+The easiest way to implement this is to either edit the installed desktop shortcut (`/usr/share/applications/code.desktop`) or copy the shorcut to your local shortcuts directory (`~/.local/share/applications/code.desktop`), and find and edit the following lines:
+```ini
+[Desktop Entry]
+Name=Visual Studio Code (X11)
+Exec=/usr/share/code/code --ozone-platform=x11 %F
+
+[Desktop Action new-empty-window]
+Name=New Empty Window (Wayland)
+Exec=/usr/share/code/code --new-window %F
+```
+You will likely need to log out and back in again to see the changes.
+Note that this will likely mask the installed VSCode desktop launcher. Renaming the new file and/or changing the `Name` entry (under `[Desktop Entry]`) should make both launchers appear.
