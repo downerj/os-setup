@@ -26,3 +26,30 @@ gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces true
 gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
 gsettings set org.gnome.shell.extensions.ding show-home false
 ```
+
+## Set the Startup Sound
+```bash
+sudo apt install -y pulseaudio-utils
+
+startup_sound="https://github.com/ubuntu/yaru/raw/refs/heads/master/sounds/src/stereo/warty-startup.oga"
+sounds_dir="$HOME/.local/share/sounds/Custom/stereo"
+mkdir -p "$sounds_dir"
+pushd "$sounds_dir"
+curl -L -O -R "$startup_sound"
+popd
+unset sounds_dir startup_sound
+```
+
+**~/.config/autostart/StartupSound.desktop**
+```ini
+[Destkop Entry]
+Type=Application
+Exec=/usr/bin/paplay ~/.local/share/sounds/Custom/stereo/warty-startup.oga
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Play login sound
+Name=Play login sound
+Comment[en_US]=
+Comment=
+```
