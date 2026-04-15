@@ -323,6 +323,14 @@ unset julia_bin
 # umask => u:000 g:010 o:010
 # chmod => u:111 g:101 o:101 (go-w)
 umask 022
+
+#
+# Display a message on exit
+#
+function my_on_exit {
+  printf "Bye.\n"
+}
+trap my_on_exit EXIT TERM HUP
 ```
 
 ## ~/.inputrc
