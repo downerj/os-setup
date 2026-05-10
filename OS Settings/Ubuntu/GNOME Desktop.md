@@ -53,3 +53,23 @@ Name=Play login sound
 Comment[en_US]=
 Comment=
 ```
+
+## Make your profile picture visible at the login screen
+The following assumes you have an existing profile picture located at `~/.face`; replace that filepath below with the correct one, if needed.
+
+First copy the picture to a location the accounts daemon has access to, renaming it to simply your username:
+```bash
+sudo cp ~/.face /var/lib/AccountsService/icons/$USER
+# 644 = rw-r--r--
+sudo chmod 644 /var/lib/AccountsService/icons/$USER
+```
+Then edit the file at `/var/lib/AccountsService/users/$USER` to contain the following `Icon` entry, replacing `<your-username>` with your username:
+```ini
+Icon=/var/lib/AccountsService/icons/<your-username>
+```
+Then restart the accounts service:
+```bash
+sudo systemctl restart accounts-daemon
+```
+You'll see the profile picture the next time you log out or restart.
+
