@@ -15,39 +15,96 @@ The JSON file can be sorted by opening the Command Palette (**Ctrl** + **Shift**
 ### JSON
 ```json
 {
+  "[css]": {
+    "editor.fontLigatures": false
+  },
+  "[html]": {
+    "editor.fontLigatures": false
+  },
+  "[markdown]": {
+    "editor.fontLigatures": false
+  },
+  "[xml]": {
+    "editor.fontLigatures": false
+  },
+  "[xsl]": {
+    "editor.fontLigatures": false
+  },
   "chat.agent.enabled": false,
   "chat.agentsControl.enabled": "hidden",
   "chat.commandCenter.enabled": false,
-  "editor.fontFamily": "'Cascadia Code', 'CMU Typewriter Text', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
+  "chat.disableAIFeatures": true,
+  "cmake.configureOnEdit": false,
+  "cmake.configureOnOpen": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "'Fantasque Sans Mono', 'CMU Typewriter Text', 'Cascadia Code', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
+  "editor.inlineSuggest.enabled": false,
+  "editor.largeFileOptimizations": false,
+  "editor.lineHeight": 1.2,
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "indent",
+  "explorer.autoReveal": false,
+  "files.associations": {
+    "*.desktop": "ini"
+  },
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "always",
   "git.showActionButton": {
     "sync": false
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "markdown": false,
+    "plaintext": false,
+    "scminput": false
+  },
+  "glassit.alpha": 235,
+  "html.format.wrapLineLength": 0,
+  "jupyter.askForKernelRestart": false,
+  "markdown.preview.scrollEditorWithPreview": false,
+  "markdown.preview.scrollPreviewWithEditor": false,
+  "notebook.editorOptionsCustomizations": {
+    "editor.indentSize": 4,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "python.terminal.shellIntegration.enabled": false,
+  "search.collapseResults": "alwaysCollapse",
+  "search.exclude": {
+    "**/*.code-search": true,
+    "**/bower_components": true,
+    "**/node_modules": true,
+    "**/venv": true
   },
   "telemetry.editStats.enabled": false,
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
+  "terminal.integrated.confirmOnExit": "always",
   "terminal.integrated.defaultProfile.linux": "Bash (Login, Git) 🖥️",
-  "terminal.integrated.defaultProfile.windows": "PowerShell 7 🖥️",
-  "terminal.integrated.fontFamily": "'Cascadia Code', 'CMU Typewriter Text', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
+  "terminal.integrated.fontFamily": "'Ubuntu Mono', 'CMU Typewriter Text', 'Cascadia Code', 'Consolas', 'Courier New', 'Fantasque Sans Mono', 'Fira Mono', 'IBM Plex Mono', 'JetBrains Mono', 'PxPlus IBM VGA 9x16', monospace",
+  "terminal.integrated.fontLigatures.enabled": false,
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.initialHint": false,
   "terminal.integrated.profiles.linux": {
-      "Bash (Login, Git) 🖥️": {
-          "args": [
-              "bash",
-              "-l"
-          ],
-          "env": {
-              "_my_use_git": "true"
-          },
-          "icon": "terminal-bash",
-          "path": "/usr/bin/env"
-      }
+    "Bash (Login, Git) 🖥️": {
+      "args": [
+        "bash",
+        "-i",
+        "-l"
+      ],
+      "env": {
+        "_my_use_git": "true"
+      },
+      "icon": "terminal-bash",
+      "path": "/usr/bin/env"
+    }
   },
   "terminal.integrated.profiles.windows": {
     "PowerShell 7 🖥️": {
@@ -60,11 +117,18 @@ The JSON file can be sorted by opening the Command Palette (**Ctrl** + **Shift**
       "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
     }
   },
+  "terminal.integrated.shellIntegration.enabled": false,
+  "update.mode": "manual",
+  "update.showReleaseNotes": false,
   "window.autoDetectColorScheme": true,
   "window.commandCenter": true,
   "window.restoreWindows": "none",
+  "workbench.editor.tabSizing": "shrink",
   "workbench.panel.defaultLocation": "top",
+  "workbench.preferredDarkColorTheme": "Shades of Purple (Super Dark)",
+  "workbench.preferredLightColorTheme": "Light+",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.secondarySideBar.showLabels": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none"
 }
