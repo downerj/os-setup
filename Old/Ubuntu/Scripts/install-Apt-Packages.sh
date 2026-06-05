@@ -22,6 +22,7 @@ apt_apps=(
   clang-tidy
   cmake
   curl
+  dialog
   dnsutils
   elixir
   emacs
