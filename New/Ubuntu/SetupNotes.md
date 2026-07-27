@@ -83,3 +83,11 @@ To hide an app launcher, find the corresponding `*.desktop` file (in `/usr/share
 Hidden=true
 NoDisplay=true
 ```
+
+## Jetpack (Adept Software)
+
+Visit [adeptsoftware.com/jetpack](https://www.adeptsoftware.com/jetpack/).
+- Direct download: [adeptsoftware.com/jetpack/jetpak15.zip](https://www.adeptsoftware.com/jetpack/jetpak15.zip).
+
+For the theme pack creator, visit [runevision.com/multimedia/jetpack](https://runevision.com/multimedia/jetpack/).
+- Direct download: [runevision.com/multimedia/jetpack/module15.zip)](https://runevision.com/multimedia/jetpack/module15.zip)
