@@ -91,3 +91,7 @@ Visit [adeptsoftware.com/jetpack](https://www.adeptsoftware.com/jetpack/).
 
 For the theme pack creator, visit [runevision.com/multimedia/jetpack](https://runevision.com/multimedia/jetpack/).
 - Direct download: [runevision.com/multimedia/jetpack/module15.zip)](https://runevision.com/multimedia/jetpack/module15.zip)
+
+## GLAD for OpenGL
+
+Visit [gen.glad.sh](https://gen.glad.sh/).
