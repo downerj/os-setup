@@ -40,6 +40,9 @@ However, fonts can also be installed for the user by copying them to either of t
 
 ## JSoftware
 
+### Installing Everything
+
+To run the automated script to install the J language, the J QT IDE and all addons, run:
 ```bash
 curl -fsSL jsoftware.com/download/j9.7/jinstall.sh | sh -s
 ```
@@ -48,6 +51,10 @@ Then move the newly created launchers from the Desktop to the apps folder:
 ```bash
 mv ~/Desktop/*.desktop ~/.local/share/applications/
 ```
+
+### Installing Manually
+
+> TODO: Implement this.
 
 ## Apt Packages
 
