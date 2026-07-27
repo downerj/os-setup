@@ -56,6 +56,10 @@ mv ~/Desktop/*.desktop ~/.local/share/applications/
 
 > TODO: Implement this.
 
+## Dolphin Emulator
+
+Visit [dolphin-emu.org/download](https://dolphin-emu.org/download/).
+
 ## Apt Packages
 
 ```bash
