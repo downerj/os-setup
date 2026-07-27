@@ -64,3 +64,11 @@ do
   sudo snap install --classic $app
 done
 ```
+
+## Hiding App Launchers
+
+To hide an app launcher, find the corresponding `*.desktop` file (in `/usr/share/applications/`, `/.local/share/applications/`, etc.), and add the following lines:
+```ini
+Hidden=true
+NoDisplay=true
+```
