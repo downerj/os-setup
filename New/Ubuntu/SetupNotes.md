@@ -95,3 +95,21 @@ For the theme pack creator, visit [runevision.com/multimedia/jetpack](https://ru
 ## GLAD for OpenGL
 
 Visit [gen.glad.sh](https://gen.glad.sh/).
+
+## GNOME Settings
+
+> TODO: Implement.
+
+## GNOME Logon Sound
+
+> TODO: Implement, using Warty Warthog logon sound.
+
+## Source Code Repositories
+
+Store repositories in `~/Source/`, organizing by host and then by user. For example:
+- GitHub [@downerj](https://github.com/downerj): `~/Source/github.com/downerj/`
+- GitHub Gists [@downerj](https://gist.github.com/downerj): `~/Source/gist.github.com/downerj/`
+- Local/temp projects: `~/Source/tmp/`
+
+This way, the repository URLs matches the file paths. For example:
+- GitHub [@downerj/os-setup](https://github.com/downerj/os-setup): `~/Source/github.com/downerj/os-setup`
