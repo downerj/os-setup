@@ -69,7 +69,7 @@ sudo apt install adb aptitude arduino assimp-utils avrdude bash-doc bat build-es
 ## Snap Packages
 
 ```bash
-apps=(android-studio blender clion code intellij-idea-community julia makemkv musescore pycharm-community webstorm)
+apps=(android-studio blender clion code intellij-idea-community julia makemkv pycharm-community webstorm)
 for app in ${apps[@]}
 do
   sudo snap install --classic $app
@@ -79,6 +79,41 @@ done
 ### MakeMKV
 
 Visit [forum.makemkv.com/forum/viewtopic.php?t=1053](https://forum.makemkv.com/forum/viewtopic.php?t=1053) for the current beta key.
+
+## MuseScore
+
+Install MuseScore Studio AppImage from [musescore.org](https://musescore.org).
+
+Note: The Snap package `musescore` seems to be broken, so don't install it from Snap.
+
+Make the user apps directory and copy the app image to it (renaming it):
+```bash
+mkdir -p ~/Applications
+cp -i -v ~/Downloads/path/to/MuseScore-Studio-<version>.AppImage ~/Applications/MuseScore-Studio.AppImage
+chmod +x ~/Applications/MuseScore-Studio.AppImage
+```
+
+Mount the AppImage and extract the icon to the user icons directory:
+```bash
+mkdir -p ~/.local/share/icons
+~/Applications/MuseScore-Studio.AppImage --appimage-mount
+# Copy the mount path and run the following in a new terminal
+cp -i -v /tmp/<mount-point>/share/icons/hicolor/512x512/apps/mscore4portable.png ~/.local/share/icons/musescore
+# End the AppImage mount process (Ctrl+C)
+```
+
+Create a desktop launcher at `~/.local/share/applications/MuseScore\ Studio.desktop`:
+```ini
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=MuseScore Studio
+Exec=/home/downerj/Applications/MuseScore-Studio.AppImage %U
+Icon=/home/downerj/.local/share/icons/musescore
+NoDisplay=false
+Categories=Audio;
+```
 
 ## Hiding App Launchers
 
