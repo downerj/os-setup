@@ -63,7 +63,7 @@ Visit [dolphin-emu.org/download](https://dolphin-emu.org/download/).
 ## Apt Packages
 
 ```bash
-sudo apt install adb aptitude arduino assimp-utils avrdude bash-doc bat build-essential cdrdao clang clang-tidy clang-tools cmake curl desmume dialog dnsutils dosbox emacs eslint f3d fastfetch fceux fdupes ffmpeg firefox flatpak fonts-terminus freeglut3-dev fuse3 g++ gcc gimp git glslang-dev glslang-tools gnome-tweaks gpart gparted grafx2 groff handbrake idle imagemagick inkscape jupyter-client jupyter-core jupyter-server kotlin leocad libassimp-dev libc++-dev libstdc++-16-dev libgles-dev libglew-dev libglfw3-dev libglm-dev libgmp-dev libncurses-dev libretro-desmume libretro-mgba libretro-nestopia libretro-snes9x libsdl3-dev libsdl3-doc libsdl3-image-dev libsdl3-image-doc libsdl3-image-tests libsdl3-tests libsdl3-ttf-dev libsdl3-ttf-doc libsfml-dev libtool libtool-bin libvulkan-dev libczmq-dev libzmq3-dev lshw lua5.5 lynx make mesa-utils mgba-sdl mupen64plus-* nodejs npm openjdk-25-jdk openssh-server pandoc perl php-fpm php postgresql python3 python3-ipykernel python3-pip python3-tk python3-venv qpdf retroarch ruby ruby-dev rustc samba scummvm sgt-launcher sgt-puzzles spirv-tools sqlite3 synaptic tcl telnet texmacs tiled tmux tree vim-gtk3 visualboyadvance vlc vulkan-tools wit wodim zenity
+sudo apt install adb aptitude arduino assimp-utils avrdude bash-doc bat build-essential cdrdao clang clang-tidy clang-tools cmake curl desmume dialog dnsutils dosbox emacs eslint f3d fastfetch fceux fdupes ffmpeg firefox flatpak fonts-terminus freeglut3-dev fuse3 g++ gcc gimp git glslang-dev glslang-tools gnome-tweaks gpart gparted grafx2 groff handbrake idle imagemagick inkscape jupyter-client jupyter-core jupyter-server kotlin leocad libassimp-dev libc++-dev libstdc++-16-dev libgles-dev libglew-dev libglfw3-dev libglm-dev libgmp-dev libncurses-dev libretro-desmume libretro-mgba libretro-nestopia libretro-snes9x libsdl3-dev libsdl3-doc libsdl3-image-dev libsdl3-image-doc libsdl3-image-tests libsdl3-tests libsdl3-ttf-dev libsdl3-ttf-doc libsfml-dev libtool libtool-bin libvulkan-dev libczmq-dev libzmq3-dev lshw lua5.5 lynx make mesa-utils mgba-sdl mupen64plus-* nodejs npm openjdk-25-jdk openssh-server pandoc perl php-fpm php postgresql pulseaudio-utils python3 python3-ipykernel python3-pip python3-tk python3-venv qpdf retroarch ruby ruby-dev rustc samba scummvm sgt-launcher sgt-puzzles spirv-tools sqlite3 synaptic tcl telnet texmacs tiled tmux tree vim-gtk3 visualboyadvance vlc vulkan-tools wit wodim zenity
 ```
 
 ## Snap Packages
@@ -106,7 +106,21 @@ Visit [gen.glad.sh](https://gen.glad.sh/).
 
 ## GNOME Logon Sound
 
-> TODO: Implement, using Warty Warthog logon sound.
+Download the [startup sound](https://github.com/ubuntu/yaru/raw/refs/heads/master/sounds/src/stereo/warty-startup.oga) from Ubuntu 4.10 Warty Warthog and save it in `~/.local/share/sounds/Custom/stereo/`.
+
+Then write the following to `~/.config/autostart/Play\ Startup\ Sound.desktop`:
+
+```ini
+[Desktop Entry]
+Type=Application
+Name=Play Startup Sound
+Exec=/usr/bin/paplay /home/downerj/.local/share/sounds/Custom/stereo/warty-startup.oga
+Hidden=false
+NoDisplay=false
+Icon=audio-volume-high
+X-GNOME-Autostart-enabled=true
+Name=Play logon sound
+```
 
 ## Source Code Repositories
 
