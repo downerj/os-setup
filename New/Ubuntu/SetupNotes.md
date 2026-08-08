@@ -109,8 +109,8 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=MuseScore Studio
-Exec=/home/downerj/Applications/MuseScore-Studio.AppImage %U
-Icon=/home/downerj/.local/share/icons/musescore
+Exec=/home/<username>/Applications/MuseScore-Studio.AppImage %U
+Icon=/home/<username>/.local/share/icons/musescore
 NoDisplay=false
 Categories=Audio;
 ```
@@ -159,7 +159,7 @@ Then write the following to `~/.config/autostart/Play\ Startup\ Sound.desktop`:
 [Desktop Entry]
 Type=Application
 Name=Play Startup Sound
-Exec=/usr/bin/paplay /home/downerj/.local/share/sounds/Custom/stereo/warty-startup.oga
+Exec=/usr/bin/paplay /home/<username>/.local/share/sounds/Custom/stereo/warty-startup.oga
 Hidden=false
 NoDisplay=false
 Icon=audio-volume-high
