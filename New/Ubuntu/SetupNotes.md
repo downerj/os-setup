@@ -115,6 +115,16 @@ NoDisplay=false
 Categories=Audio;
 ```
 
+## TIC-80
+
+Download Linux binary at [tic80.com/create](https://tic80.com/create).
+
+Install using `dpkg`:
+```bash
+cd <path-to-download-folder>
+sudo dpkg -i tic80-v<version>-linux.deb
+```
+
 ## Hiding App Launchers
 
 To hide an app launcher, find the corresponding `*.desktop` file (in `/usr/share/applications/`, `/.local/share/applications/`, etc.), and add the following lines:
