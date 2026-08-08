@@ -188,6 +188,49 @@ unzip -d vbdos vbdos.zip
 mv qbx vbdos <dos-c-drive-dir>/
 ```
 
+### DJGPP &amp; RHIDE
+
+Visit [delorie.com/djgpp/zip-picker.html](https://www.delorie.com/djgpp/zip-picker.html), set the FTP site to `http://www.delorie.com`, select the desired options and click **Tell me which files I need**. Optionally, also find the download link for the `unzip32.exe` executable if extracting archives within DOSBox. 
+
+Example direct downloads:
+- [delorie.com/pub/djgpp/current/unzip32.exe](https://www.delorie.com/pub/djgpp/current/unzip32.exe)
+- [delorie.com/pub/djgpp/current/v2/copying.dj](http://www.delorie.com/pub/djgpp/current/v2/copying.dj)
+- [delorie.com/pub/djgpp/current/v2/djdev205.zip](http://www.delorie.com/pub/djgpp/current/v2/djdev205.zip)
+- [delorie.com/pub/djgpp/current/v2/readme.1st](http://www.delorie.com/pub/djgpp/current/v2/readme.1st)
+- [delorie.com/pub/djgpp/current/v2apps/rhid15ab.zip](http://www.delorie.com/pub/djgpp/current/v2apps/rhid15ab.zip)
+- [delorie.com/pub/djgpp/current/v2gnu/bnu2351b.zip](http://www.delorie.com/pub/djgpp/current/v2gnu/bnu2351b.zip)
+- [delorie.com/pub/djgpp/current/v2gnu/em3002b.zip](http://www.delorie.com/pub/djgpp/current/v2gnu/em3002b.zip)
+- [delorie.com/pub/djgpp/current/v2gnu/gcc930b.zip](http://www.delorie.com/pub/djgpp/current/v2gnu/gcc930b.zip)
+- [delorie.com/pub/djgpp/current/v2gnu/gdb801b.zip](http://www.delorie.com/pub/djgpp/current/v2gnu/gdb801b.zip)
+- [delorie.com/pub/djgpp/current/v2gnu/gpp930b.zip](http://www.delorie.com/pub/djgpp/current/v2gnu/gpp930b.zip)
+- [delorie.com/pub/djgpp/current/v2gnu/mak44b.zip](http://www.delorie.com/pub/djgpp/current/v2gnu/mak44b.zip)
+- [delorie.com/pub/djgpp/current/v2gnu/objc930b.zip](http://www.delorie.com/pub/djgpp/current/v2gnu/objc930b.zip)
+- [delorie.com/pub/djgpp/current/v2misc/csdpmi7b.zip](http://www.delorie.com/pub/djgpp/current/v2misc/csdpmi7b.zip)
+- [delorie.com/pub/djgpp/current/v2tk/allegro/all422ar2.zip](http://www.delorie.com/pub/djgpp/current/v2tk/allegro/all422ar2.zip)
+- [delorie.com/pub/djgpp/current/v2tk/allegro/all422br2.zip](http://www.delorie.com/pub/djgpp/current/v2tk/allegro/all422br2.zip)
+- [delorie.com/pub/djgpp/current/v2tk/grx249d.zip](http://www.delorie.com/pub/djgpp/current/v2tk/grx249d.zip)
+- [delorie.com/pub/djgpp/current/v2tk/pdcur39a.zip](http://www.delorie.com/pub/djgpp/current/v2tk/pdcur39a.zip)
+
+Then copy and extract all files to a new `DJGPP` directory, and copy it to the DOS `C:` drive.
+
+```bash
+cd <path-to-download-folder>
+mkdir -p DJGPP
+cp copying.dj readme.1st unzip32.exe DJGPP/
+for z in *.zip
+do
+  unzip -d DJGPP/ "$z"
+done
+mv DJGPP <dos-c-drive-dir>/
+```
+
+Then follow the rest of the instructions from the **DJGPP Zip File Picker Results** page, especially the instructions to update `C:\AUTOEXEC.BAT`:
+
+```bat
+set PATH=C:\DJGPP\BIN;%PATH%
+set DJGPP=C:\DJGPP\DJGPP.ENV
+```
+
 ## GLAD for OpenGL
 
 Visit [gen.glad.sh](https://gen.glad.sh/).
