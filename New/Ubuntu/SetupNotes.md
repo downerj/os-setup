@@ -166,13 +166,26 @@ mv dpaint jetpak15 modeule15 <dos-c-drive-dir>/
 
 Visit [myabandonware.com/game/heaven-earth-1fb](https://www.myabandonware.com/game/heaven-earth-1fb).
 
-Unzip, rename the folder and place it in the DOS `C:` droive:
+Unzip, rename the folder and place it in the DOS `C:` drive:
 
 ```bash
 cd <path-to-download-folder>
 unzip Heaven-Earth_DOS_EN.zip
 mv heaven-and-earth/ heaven
 mv heaven <dos-c-drive-dir>/
+```
+
+### QuickBASIC and VisualBASIC
+
+Visit [qbasic.net/en/qbasic-downloads/compiler/qbasic-compiler.htm](https://qbasic.net/en/qbasic-downloads/compiler/qbasic-compiler.htm) and Download **QuickBasic 7.1** and **Visual Basic for DOS**.
+
+Unzip and place the folders in the DOS `C:` drive:
+
+```bash
+cd <path-to-download-folder>
+unzip pds71.zip
+unzip -d vbdos vbdos.zip
+mv qbx vbdos <dos-c-drive-dir>/
 ```
 
 ## GLAD for OpenGL
