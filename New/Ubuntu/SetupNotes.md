@@ -133,7 +133,17 @@ Hidden=true
 NoDisplay=true
 ```
 
-## Jetpack (Adept Software)
+## MS-DOS Games
+
+After installing DOSBox, create a folder to act as the `C:` drive for DOS (e.g. `~/DOS`).
+
+```bash
+mkdir -p <dos-c-drive-dir>
+```
+
+Then download the individual DOS software/games and place their folder in the DOS `C:` drive.
+
+### Jetpack (Adept Software)
 
 Visit [adeptsoftware.com/jetpack](https://www.adeptsoftware.com/jetpack/).
 - Direct download: [adeptsoftware.com/jetpack/jetpak15.zip](https://www.adeptsoftware.com/jetpack/jetpak15.zip).
@@ -141,9 +151,29 @@ Visit [adeptsoftware.com/jetpack](https://www.adeptsoftware.com/jetpack/).
 For the theme pack creator, visit [runevision.com/multimedia/jetpack](https://runevision.com/multimedia/jetpack/).
 - Direct download: [runevision.com/multimedia/jetpack/module15.zip)](https://runevision.com/multimedia/jetpack/module15.zip)
 
-## Heaven &amp; Earth (Buena Vista Software)
+Unzip and place the folders in the DOS `C:` drive:
+
+```bash
+cd <path-to-download-folder>
+unzip jetpak15.zip
+unzip -d module15 module15.zip
+mv module15/dpaint.zip ./
+unzip -d dpaint dpaint.zip
+mv dpaint jetpak15 modeule15 <dos-c-drive-dir>/
+```
+
+### Heaven &amp; Earth (Buena Vista Software)
 
 Visit [myabandonware.com/game/heaven-earth-1fb](https://www.myabandonware.com/game/heaven-earth-1fb).
+
+Unzip, rename the folder and place it in the DOS `C:` droive:
+
+```bash
+cd <path-to-download-folder>
+unzip Heaven-Earth_DOS_EN.zip
+mv heaven-and-earth/ heaven
+mv heaven <dos-c-drive-dir>/
+```
 
 ## GLAD for OpenGL
 
