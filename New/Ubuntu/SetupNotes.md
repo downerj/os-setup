@@ -237,7 +237,13 @@ Visit [gen.glad.sh](https://gen.glad.sh/).
 
 ## GNOME Settings
 
-> TODO: Implement.
+Disable dimming.
+```bash
+gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
+gsettings set org.gnome.settings-daemon.plugins.power idle-brightness 100
+```
+
+> TODO: Implement the rest.
 
 ## GNOME Logon Sound
 
