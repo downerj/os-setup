@@ -86,7 +86,7 @@ Install MuseScore Studio AppImage from [musescore.org](https://musescore.org).
 
 Note: The Snap package `musescore` seems to be broken, so don't install it from Snap.
 
-Make the user apps directory and copy the app image to it (renaming it):
+Make the user apps directory exists and copy the app image to it (renaming it):
 ```bash
 mkdir -p ~/Applications
 cp -i -v ~/Downloads/path/to/MuseScore-Studio-<version>.AppImage ~/Applications/MuseScore-Studio.AppImage
@@ -229,6 +229,55 @@ Then follow the rest of the instructions from the **DJGPP Zip File Picker Result
 ```bat
 set PATH=C:\DJGPP\BIN;%PATH%
 set DJGPP=C:\DJGPP\DJGPP.ENV
+```
+
+## Ardens (Arduboy Emulator)
+
+Download the latest Linux binary (`Ardens_linux_x64.zip`) from [github.com/tiberiusbrown/Ardens/releases](https://github.com/tiberiusbrown/Ardens/releases).
+
+Then unzip and move it to the new apps directory.
+```bash
+cd <path-to-download-folder>
+unzip -d Ardens Ardens_linux_x64.zip
+chmod +x Ardens/*.AppImage
+mkdir -p ~/Applications
+mv Ardens/*.AppImage ~/Applications/
+rm -rf Ardens/
+```
+
+Mount the main AppImage and extract the icon to the user icons directory.
+```bash
+mkdir -p ~/.local/share/icons
+~/Applications/Ardens-x86_64.AppImage --appimage-mount
+# Copy the mount path and run the following in a new terminal
+cp -i -v /tmp/<mount-point>/usr/share/icons/hicolor/256x256/apps/ardens.png ~/.local/share/icons/ardens
+# End the AppImage mount process (Ctrl+C)
+```
+
+Create a desktop launcher at `~/.local/share/applications/Ardens.desktop`:
+```ini
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Ardens
+Exec=/home/<username>/Applications/Ardens-x86_64.AppImage %U
+Icon=/home/<username>/.local/share/icons/ardens
+NoDisplay=false
+Categories=Development;Game;
+```
+
+And another at `~/.local/share/applications/ArdensPlayer.desktop`:
+```ini
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Ardens Player
+Exec=/home/<username>/Applications/ArdensPlayer-x86_64.AppImage %U
+Icon=/home/<username>/.local/share/icons/ardens
+NoDisplay=false
+Categories=Development;Game;
 ```
 
 ## GLAD for OpenGL
