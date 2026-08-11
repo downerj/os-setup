@@ -267,7 +267,7 @@ NoDisplay=false
 Categories=Development;Game;
 ```
 
-And another at `~/.local/share/applications/ArdensPlayer.desktop`:
+And another at `~/.local/share/applications/Ardens\ Player.desktop`:
 ```ini
 [Desktop Entry]
 Version=1.0
