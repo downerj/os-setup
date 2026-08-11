@@ -42,9 +42,16 @@ However, fonts can also be installed for the user by copying them to either of t
 
 ### Installing Everything
 
+First determine the current `<version>` by visiting [code.jsoftware.com/wiki/System/Installation](https://code.jsoftware.com/wiki/System/Installation).
+
 To run the automated script to install the J language, the J QT IDE and all addons, run:
 ```bash
-curl -fsSL jsoftware.com/download/j9.7/jinstall.sh | sh -s
+curl -fsSL jsoftware.com/download/j<version>/jinstall.sh | sh -s
+```
+
+To only install slim JQt and no addons:
+```bash
+curl -fsSL jsoftware.com/download/j<version>/jinstall.sh | sh -s -- -p mydir --qt slim --no-addons
 ```
 
 Then move the newly created launchers from the Desktop to the apps folder:
@@ -52,9 +59,16 @@ Then move the newly created launchers from the Desktop to the apps folder:
 mv ~/Desktop/*.desktop ~/.local/share/applications/
 ```
 
-### Installing Manually
+You'll need to add a link to the J console to your `PATH`. One way to do this is to ensure you have the following line in your `.bashrc`/`.bash_profile`:
+```bash
+[[ -d "$HOME/.local/bin" ]] && export PATH="$HOME/.local/bin:$PATH"
+```
 
-> TODO: Implement this.
+Then add a link to the J console, making sure to rename it so as to not conflict with the Java `jconsole`:
+```bash
+mkdir -p ~/.local/bin
+ln -s ~/mydir/j<version>/bin/jconsole ~/.local/share/ijconsole
+```
 
 ## Dolphin Emulator
 
