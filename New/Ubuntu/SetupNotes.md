@@ -4,15 +4,6 @@
 
 When setting up a data drive, if dual-booting with Windows, make sure to disable the "Fast Startup Option" on Windows; otherwise the drive will always mount as read-only.
 
-## Nano
-
-Place the following in `~/.nanorc`:
-```
-# Word wrap around space characters
-set atblanks
-set softwrap
-```
-
 ## Ptyxis Terminal
 
 To get the default profile ID:
