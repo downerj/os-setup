@@ -1,0 +1,4 @@
+Tab: complete
+"\e[Z": menu-complete
+set show-all-if-unmodified on
+set bell-style none
