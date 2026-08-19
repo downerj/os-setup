@@ -73,11 +73,21 @@ sudo apt install adb aptitude arduino assimp-utils avrdude bash-doc bat build-es
 
 ## Snap Packages
 
+`--classic` apps:
 ```bash
-apps=(android-studio blender clion code discord intellij-idea-community julia makemkv pycharm-community webstorm)
+apps=(android-studio blender clion code intellij-idea-community julia makemkv processing pycharm-community webstorm)
 for app in ${apps[@]}
 do
   sudo snap install --classic $app
+done
+```
+
+Other apps:
+```bash
+apps=(discord)
+for app in ${apps[@]}
+do
+  sudo snap install $app
 done
 ```
 
