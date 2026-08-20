@@ -336,3 +336,11 @@ Store repositories in `~/Source/`, organizing by host and then by user. For exam
 
 This way, the repository URLs matches the file paths. For example:
 - GitHub [@downerj/os-setup](https://github.com/downerj/os-setup): `~/Source/github.com/downerj/os-setup`
+
+## Unmounting External USB Drives
+
+To unmount and properly eject an external USB drive (e.g. `/dev/sdX`):
+```bash
+sudo umount /dev/sdX
+udisksctl power-off -b /dev/sdX
+```
