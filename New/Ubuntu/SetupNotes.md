@@ -160,6 +160,31 @@ Categories=Application;Development;
 StartupNotify=false
 MimeType=text/javascript;
 ```
+
+## Clang REPL (C++)
+
+Download the icon for C++ and put it in the user-level icons folder:
+```bash
+mkdir -p ~/.local/share/icons
+curl -L -R 'https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png' -o ~/.local/share/icons/cpp
+```
+
+Use GIMP to edit the file to make it square, centered and a transparent background, and overwrite it.
+
+Then create a new shortcut for Clang REPL:
+```ini
+[Desktop Entry]
+Name=Clang REPL
+Comment=REPL for the C++ programming language
+Exec=/usr/bin/clang-repl
+TryExec=/usr/bin/clang-repl
+Icon=/home/<username>/.local/share/icons/cpp
+Terminal=true
+Type=Application
+Categories=Application;Development;
+StartupNotify=false
+```
+
 ## MakeMKV
 
 Visit [forum.makemkv.com/forum/viewtopic.php?t=1053](https://forum.makemkv.com/forum/viewtopic.php?t=1053) for the current beta key.
