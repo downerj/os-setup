@@ -92,6 +92,7 @@ done
 ```
 
 ## Python 3 launcher
+
 Download the icon for Python3 and put it in the user-level icons folder:
 ```bash
 mkdir -p ~/.local/share/icons
@@ -135,6 +136,30 @@ StartupNotify=false
 MimeType=text/x-python;
 ```
 
+## Node.js
+
+Download the icon for Node.js and put it in the user-level icons folder:
+```bash
+mkdir -p ~/.local/share/icons
+curl -L -R 'https://nodejs.org/static/logos/nodejsHex.svg' -o ~/.local/share/icons/node
+```
+
+Create a new shortcut for Node.js:
+
+`~/.local/share/applications/node.desktop`:
+```ini
+[Desktop Entry]
+Name=Node.js
+Comment=REPL for the JavaScript programming language
+Exec=/usr/bin/node -i %F
+TryExec=/usr/bin/node
+Icon=/home/<username>/.local/share/icons/node
+Terminal=true
+Type=Application
+Categories=Application;Development;
+StartupNotify=false
+MimeType=text/javascript;
+```
 ## MakeMKV
 
 Visit [forum.makemkv.com/forum/viewtopic.php?t=1053](https://forum.makemkv.com/forum/viewtopic.php?t=1053) for the current beta key.
