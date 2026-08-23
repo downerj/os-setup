@@ -91,7 +91,51 @@ do
 done
 ```
 
-### MakeMKV
+## Python 3 launcher
+Download the icon for Python3 and put it in the user-level icons folder:
+```bash
+mkdir -p ~/.local/share/icons
+curl -L -R 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Python_logo_01.svg' -o ~/.local/share/icons/python
+```
+
+Add the following to all of the old IDLE shortcuts at (`/usr/share/applications/idle*.desktop`) to hide them:
+```ini
+Hidden=true
+```
+
+Create two new shortcuts for Python and IDLE:
+
+`~/.local/share/applications/idle.desktop`:
+```ini
+[Desktop Entry]
+Name=Python IDLE
+Comment=Integrated DeveLopment Environment for Python3
+Exec=/usr/bin/idle %F
+TryExec=/usr/bin/idle
+Icon=/home/<username>/.local/share/icons/python
+Terminal=false
+Type=Application
+Categories=Application;Development;
+StartupNotify=false
+MimeType=text/x-python;
+```
+
+`~/.local/share/applications/python.desktop`:
+```ini
+[Desktop Entry]
+Name=Python
+Comment=REPL for the Python programming language
+Exec=/usr/bin/python3 -i %F
+TryExec=/usr/bin/python3
+Icon=/home/<username>/.local/share/icons/python
+Terminal=true
+Type=Application
+Categories=Application;Development;
+StartupNotify=false
+MimeType=text/x-python;
+```
+
+## MakeMKV
 
 Visit [forum.makemkv.com/forum/viewtopic.php?t=1053](https://forum.makemkv.com/forum/viewtopic.php?t=1053) for the current beta key.
 
