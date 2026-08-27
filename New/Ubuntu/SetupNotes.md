@@ -111,7 +111,7 @@ Create two new shortcuts for Python and IDLE:
 [Desktop Entry]
 Name=Python IDLE
 Comment=Integrated DeveLopment Environment for Python3
-Exec=/usr/bin/idle %F
+Exec=/usr/bin/idle %U
 TryExec=/usr/bin/idle
 Icon=/home/<username>/.local/share/icons/python
 Terminal=false
@@ -126,7 +126,7 @@ MimeType=text/x-python;
 [Desktop Entry]
 Name=Python
 Comment=REPL for the Python programming language
-Exec=/usr/bin/python3 -i %F
+Exec=/usr/bin/python3 -i %U
 TryExec=/usr/bin/python3
 Icon=/home/<username>/.local/share/icons/python
 Terminal=true
@@ -151,7 +151,7 @@ Create a new shortcut for Node.js:
 [Desktop Entry]
 Name=Node.js
 Comment=REPL for the JavaScript programming language
-Exec=/usr/bin/node -i %F
+Exec=/usr/bin/node -i %U
 TryExec=/usr/bin/node
 Icon=/home/<username>/.local/share/icons/node
 Terminal=true
@@ -183,6 +183,29 @@ Terminal=true
 Type=Application
 Categories=Application;Development;
 StartupNotify=false
+```
+
+## GNU Nano
+
+Download the icon for Nano and put it in the user-level icons folder:
+```bash
+mkdir -p ~/.local/share/icons
+curl -L -R 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Gnu-nano.svg' -o ~/.local/share/icons/nano
+```
+
+Create a new shortcut:
+```ini
+[Desktop Entry]
+Name=Nano
+Comment=Simple text editor with syntax highlighting
+Exec=/usr/bin/nano %U
+TryExec=/usr/bin/nano
+Icon=/home/downerj/.local/share/icons/nano
+Terminal=true
+Type=Application
+Categories=TextEditor;Utilities;
+StartupNotify=false
+MimeType=text/javascript;
 ```
 
 ## MakeMKV
