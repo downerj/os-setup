@@ -67,6 +67,9 @@ Visit [dolphin-emu.org/download](https://dolphin-emu.org/download/).
 
 ## Apt Packages
 
+Notes:
+- `libfuse2t64` is required by some legacy AppImages (such as LÖVE) in order to run.
+
 ```bash
 sudo apt install adb aptitude arduino assimp-utils avrdude bash-doc bat build-essential cdrdao clang clang-tidy clang-tools cmake curl desmume dialog dnsutils dos2unix dosbox emacs eslint f3d fastfetch fceux fdupes ffmpeg firefox flatpak fonts-terminus freeglut3-dev fuse3 g++ gcc gimp git glslang-dev glslang-tools gnome-tweaks gpart gparted grafx2 groff handbrake idle imagemagick inkscape jupyter-client jupyter-core jupyter-server kotlin leocad libassimp-dev libc++-dev libstdc++-16-dev libgles-dev libglew-dev libglfw3-dev libglm-dev libgmp-dev libncurses-dev libretro-desmume libretro-mgba libretro-nestopia libretro-snes9x libsdl3-dev libsdl3-doc libsdl3-image-dev libsdl3-image-doc libsdl3-image-tests libsdl3-tests libsdl3-ttf-dev libsdl3-ttf-doc libsfml-dev libtool libtool-bin libvulkan-dev libczmq-dev libzmq3-dev lshw lua5.5 lynx make mesa-utils mgba-sdl mupen64plus-* nodejs npm obs-studio openjdk-25-jdk openssh-server pandoc perl php-fpm php postgresql pulseaudio-utils python3 python3-ipykernel python3-pip python3-tk python3-venv qpdf retroarch ruby ruby-dev rustc samba scummvm sgt-launcher sgt-puzzles spirv-tools sqlite3 synaptic tcl telnet texmacs tiled tmux tree vim-gtk3 visualboyadvance vlc vulkan-tools wit wodim zenity
 ```
@@ -249,13 +252,19 @@ Categories=Audio;
 
 ## TIC-80
 
-Download Linux binary at [tic80.com/create](https://tic80.com/create).
+Download the Linux binary at [tic80.com/create](https://tic80.com/create).
 
 Install using `dpkg`:
 ```bash
 cd <path-to-download-folder>
 sudo dpkg -i tic80-v<version>-linux.deb
 ```
+
+## LÖVE
+
+Download the Linux AppImage at:
+- [love2d.org](https://love2d.org/)
+- [github.com/love2d/love/releases](https://github.com/love2d/love/releases)
 
 ## Hiding App Launchers
 
