@@ -94,6 +94,19 @@ do
 done
 ```
 
+### Disable Snap Auto Refresh
+
+```bash
+sudo snap set system refresh.hold=forever
+```
+
+To update manually:
+```bash
+sudo snap refresh --list
+sudo info <package-name>
+sudo snap refresh
+```
+
 ## Python 3 launcher
 
 Download the icon for Python3 and put it in the user-level icons folder:
