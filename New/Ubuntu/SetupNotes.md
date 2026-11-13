@@ -247,7 +247,35 @@ TryExec=/usr/bin/lua
 Icon=/home/<username>/.local/share/icons/lua
 Terminal=true
 Type=Application
-Categories=TextEditor;Utilities;
+Categories=Application;Development;
+StartupNotify=false
+```
+
+## Ruby
+
+Download the Ruby Logo Kit, extract its contents and put the main icon in the user-level icons folder:
+```bash
+mkdir -p ~/.local/share/icons
+pushd /tmp
+curl -L -O -R 'https://cache.ruby-lang.org/pub/misc/logo/ruby-logo-kit.zip'
+unzip -d ruby-logo-kit ruby-logo-kit.zip
+cp -f -v ruby-logo-kit/ruby-kit/ruby.png ~/.local/share/icons/ruby
+rm -r -f ruby-logo-kit/ ruby-logo-kit.zip
+popd
+```
+
+Create a new shortcut:
+`~/.local/share/applications/ruby.desktop`:
+```ini
+[Desktop Entry]
+Name=Ruby
+Comment=REPL for the Ruby programming language
+Exec=/usr/bin/irb %U
+TryExec=/usr/bin/irb
+Icon=/home/<username>/.local/share/icons/ruby
+Terminal=true
+Type=Application
+Categories=Application;Development;
 StartupNotify=false
 ```
 
