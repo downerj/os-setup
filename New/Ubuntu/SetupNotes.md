@@ -232,7 +232,7 @@ StartupNotify=false
 Download the icon for Lua and put it in the user-level icons folder:
 ```bash
 mkdir -p ~/.local/share/icons
-curl -L -R 'http://www.andreas-rozek.de/Lua/Lua-Logo_128x128.png' -o ~/.local/share/icons/lua
+curl -L -R 'http://www.rozek.de/Lua/Lua-Logo_128x128.png' -o ~/.local/share/icons/lua
 ```
 
 Create a new shortcut:
