@@ -225,7 +225,30 @@ Terminal=true
 Type=Application
 Categories=TextEditor;Utilities;
 StartupNotify=false
-MimeType=text/javascript;
+```
+
+## Lua
+
+Download the icon for Lua and put it in the user-level icons folder:
+```bash
+mkdir -p ~/.local/share/icons
+curl -L -R 'http://www.andreas-rozek.de/Lua/Lua-Logo_128x128.png' -o ~/.local/share/icons/lua
+```
+
+Create a new shortcut:
+
+`~/.local/share/applications/lua.desktop`:
+```ini
+[Desktop Entry]
+Name=Lua
+Comment=REPL for the Lua programming language
+Exec=/usr/bin/lua %U
+TryExec=/usr/bin/lua
+Icon=/home/<username>/.local/share/icons/lua
+Terminal=true
+Type=Application
+Categories=TextEditor;Utilities;
+StartupNotify=false
 ```
 
 ## MakeMKV
