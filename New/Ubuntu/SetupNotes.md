@@ -188,6 +188,8 @@ curl -L -R 'https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png' 
 Use GIMP to edit the file to make it square, centered and a transparent background, and overwrite it.
 
 Then create a new shortcut for Clang REPL:
+
+`~/.local/share/applications/clang-repl.desktop`:
 ```ini
 [Desktop Entry]
 Name=Clang REPL
@@ -210,6 +212,8 @@ curl -L -R 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Gnu-nano.svg' -o
 ```
 
 Create a new shortcut:
+
+`~/.local/share/applications/nano.desktop`:
 ```ini
 [Desktop Entry]
 Name=Nano
